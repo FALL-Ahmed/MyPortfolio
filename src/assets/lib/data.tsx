@@ -15,24 +15,24 @@ import ligue1 from "../../assets/img/Ligue 1.webp";
 //import mammamia1 from "../../assets/img/slide1.webp";
 import mammamia2 from "../../assets/img/slide2.webp";
 import fabricProject from "../../assets/img/fabricProject.png"
-import profilepicture from "../img/me21.webp";
-import caricon from "../../assets/icons/car-icon.svg";
-import travelicon from "../../assets/icons/travel-icon.svg";
+import profilepicture from "../img/me21.png";
+import contacticon from "../../assets/icons/contact.svg";
+import workicon from "../../assets/icons/work.svg";
 import hardwareicon from "../../assets/icons/hardware-icon.svg";
 import { GoHome, GoPerson, GoMail, GoStack, GoProject } from "react-icons/go";
-import { FiGithub, FiLinkedin, FiMail } from "react-icons/fi";
+import { FiGithub, FiLinkedin, FiMail, FiLink } from "react-icons/fi";
 import Imprint from "../../components/Imprint";
 import Privacy from "../../components/Privacy";
 
 export const headerIntroData = {
   title: {
-    fr: "Hi, C'est Trésor",
-    en: "Hi, I'm Trésor",
+    fr: "Hi, C'est Ahmed",
+    en: "Hi, I'm Ahmed",
   },
-  subtitle: "Data Analyst - Analytics Engineer",
+  subtitle: "Ingénieur Data Analyst & Business Intelligence",
   description: {
-    fr: "Je suis Trésor ADOSSI, un spécialiste des données qui peut travailler à la fois sur l'ingénierie et l'analyse des données. Je vous présente ici mon travail et ma passion pour les données. La donnée est une nouvelle mine d'or, exploitons-le ensemble.",
-    en: "I'm Trésor ADOSSI, a data specialist who can work on both data engineering and data analysis. Here I present my work and my passion for Data. Data is the new gold, let’s mine it together.",
+    fr: "Je suis FALL Ahmed, et les données sont ma passion. Dans chaque chiffre, je vois une opportunité cachée, et je suis ici pour les révéler. Laissez-vous inspirer par mon travail et faisons de vos données une force stratégique!",
+    en: "I am FALL Ahmed, and data is my passion. In every number, I see a hidden opportunity, and I am here to uncover it. Let yourself be inspired by my work, and together, let’s turn your data into a strategic asset!",
   },
   buttons: [
     {
@@ -69,6 +69,10 @@ export const projectsData = [
       { name: "Microsoft fabric", icon: fabricIcon },
     ],
     image: fabricProject,
+    deploymenturl: "https://delightful-cheesecake-9b19f0.netlify.app/",
+    githuburl: "https://github.com/AlpayC/Frontend_Abschlussprojekt_Tasty",
+    githubicon: FiGithub,
+    deploymenticon: FiLink,
     colors: {
       main: "main-btn",
       second: "secondary-btn",
@@ -87,6 +91,10 @@ export const projectsData = [
       { name: "Excel", icon: excelicon },
     ],
     image: mammamia2,
+    deploymenturl: "https://delightful-cheesecake-9b19f0.netlify.app/",
+    githuburl: "https://github.com/AlpayC/Frontend_Abschlussprojekt_Tasty",
+    githubicon: FiGithub,
+    deploymenticon: FiLink,
     colors: {
       main: "main-btn",
       second: "secondary-btn",
@@ -105,6 +113,10 @@ export const projectsData = [
       { name: "Excel", icon: excelicon },
     ],
     image: ligue1,
+    deploymenturl: "https://delightful-cheesecake-9b19f0.netlify.app/",
+    githuburl: "https://github.com/AlpayC/Frontend_Abschlussprojekt_Tasty",
+    githubicon: FiGithub,
+    deploymenticon: FiLink,
     colors: {
       main: "main-btn",
       second: "secondary-btn",
@@ -239,23 +251,23 @@ export const FooterLinks = [
 ] as const;
 
 export const sideBarRightMail = {
-  link: "mailto:kaletoadoss@gmail.com",
-  text: "kaletoadoss@gmail.com",
+  link: "mailto:fallahmed100@gmail.com",
+  text: "fallahmed100@gmail.com",
 } as const;
 
 export const sideBarLeftSocials = [
   {
-    link: "https://www.linkedin.com/in/tr%C3%A9sor-adossi/",
+    link: "https://www.linkedin.com/in/ahmed-fall-fall/",
     icon: FiLinkedin,
     altimgname: "linkedin",
   },
   {
-    link: "https://github.com/Tresorito",
+    link: "https://github.com/FALL-Ahmed",
     icon: FiGithub,
     altimgname: "github",
   },
   {
-    link: "mailto:kaletoadoss@gmail.com",
+    link: "mailto:fallahmed100@gmail.com",
     icon: FiMail,
     altimgname: "mail",
   },
@@ -263,8 +275,8 @@ export const sideBarLeftSocials = [
 
 export const quotesData = [
   {
-    fr: '"En Dieu seul nous croyons. Tous les autres doivent apporter des données"',
-    en: `"In God we trust. All others must bring data."`,
+    fr: "Il ne s'agit pas d'avoir beaucoup de données, mais de savoir quoi en faire.",
+    en: "It's not about having a lot of data, but knowing what to do with it.",
     author: "W. Edwards Deming",
   },
   {
@@ -282,39 +294,40 @@ export const aboutMeData = {
     {
       title: "Parcours Académique",
       description:
-        ` Diplôme d'Ingénieur, Big Data & IA`,
+        `Diplôme d'Ingénieur en Informatique et Management des Systèmes`,
       icon: hardwareicon,
     },
     {
       title: "Parcours Professionnel",
-      description:
-        `Data Engineer & BI Developer, Mauna Kea Consulting`,
-      icon: caricon,
+      description:  `Data Analyst & BI`,
+      icon: workicon,
     },
     {
-      title: "Certifications professionnelles",
-      description: "",
-      icon: travelicon,
+      title: "Contact",
+      description:
+        `Data Engineer & BI Developer, Mauna Kea Consulting`,
+      icon: contacticon,
     },
+    
   ],
   paragraphs_EN: [
     {
       title: "Academic background",
       description:
-        `Master's Degree, Big Data & IA`,    
+        `Engineering Degree in Computer Science and Systems Management`,    
       icon: hardwareicon,
     },
     {
-      title: "Career paths",
+      title: "Career Paths",
       description:
-        `Data Engineer & BI Developer, Mauna Kea Consulting`,
-      icon: caricon,
+        `Data Analyst & BI`,
+      icon: workicon,
     },
     {
-      title: "Professional certifications",
+      title: "Contact",
       description:
-        "",
-      icon: travelicon,
+        `Data Engineer & BI Developer, Mauna Kea Consulting`,
+      icon: contacticon,
     },
   ],
 };

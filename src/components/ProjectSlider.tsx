@@ -1,5 +1,6 @@
 import bannerBg from "../assets/img/bannerbg.webp";
 import React, { useRef } from "react";
+import Button from "./Button";
 import LiveTicker from "./ParallaxText";
 import { projectsData} from "../assets/lib/data";
 import { Swiper, SwiperSlide } from "swiper/react";
@@ -119,23 +120,22 @@ const ProjectSlider: React.FC = () => {
                         )}
                       </div>
                     </div>
-                    {/* <div className="buttons flex gap-10">
-                      <Button
-                        label="Live Demo"
-                        link={project.deploymenturl}
-                        iconSVG={project.deploymenticon}
-                        buttoncolor={project.colors.main}
-                        iconcolor={project.colors.icon}
-                        onClick={notifyServerRequest}
-                      />
-                      <Button
-                        label="Github Repository"
-                        link={project.githuburl}
-                        iconSVG={project.githubicon}
-                        buttoncolor={project.colors.main}
-                        iconcolor={project.colors.icon}
-                      />
-                    </div> */}
+                    <div className="buttons flex gap-10 max-lg:flex-col">
+                  <Button
+                    label="Live Demo"
+                    link={project.deploymenturl}
+                    iconSVG={project.deploymenticon}
+                    buttoncolor={project.colors.main}
+                    iconcolor={project.colors.icon}
+                  />
+                  <Button
+                    label="Github Repository"
+                    link={project.githuburl}
+                    iconSVG={project.githubicon}
+                    buttoncolor={project.colors.main}
+                    iconcolor={project.colors.icon}
+                  />
+                </div>
                   </div>
 
                   <div className="right-content relative h-[38rem] overflow-hidden rounded-xl w-[60%] transition-all duration-200 shadow-2xl">
@@ -160,7 +160,7 @@ const ProjectSlider: React.FC = () => {
                   className="h-[35vh] w-full object-cover object-top rounded-3xl"
                 />
                 <div className="buttons flex gap-10 max-lg:flex-col">
-                  {/* <Button
+                  <Button
                     label="Live Demo"
                     link={project.deploymenturl}
                     iconSVG={project.deploymenticon}
@@ -173,7 +173,7 @@ const ProjectSlider: React.FC = () => {
                     iconSVG={project.githubicon}
                     buttoncolor={project.colors.main}
                     iconcolor={project.colors.icon}
-                  /> */}
+                  />
                 </div>
                 <p className="text-white  max-lg:text-4xl">
                   {language === "FR"

@@ -1,5 +1,5 @@
 import React, { useRef } from "react";
-import me from "../assets/img/Adossi.svg";
+import me from "../assets/img/noir1.png";
 import { aboutMeData } from "../assets/lib/data";
 import { Autoplay, Pagination, Navigation } from "swiper/modules";
 import { Swiper, SwiperSlide } from "swiper/react";
@@ -67,7 +67,7 @@ const AboutMe: React.FC = () => {
             spaceBetween={100}
             centeredSlides={true}
             autoplay={{
-              delay: 10000,
+              delay: 5000,
               disableOnInteraction: false,
             }}
             pagination={{
@@ -112,42 +112,33 @@ const AboutMe: React.FC = () => {
                   </div>
                   <div>
                     <p className="text-white text-4xl">
-                      {paragraph.title === "Parcours Académique" || paragraph.title === "Academic background" ? (
-                        <>
-                          {paragraph.description}
-                          <br />
-                          <a href="https://www.isga.ma/" target="_blank" className="link">
-                            ISGA(Institut Supérieur d'Ingénierie et des Affaires) Rabat-Morocco
-                          </a>
-                        </>
-                      ) : (
-                        paragraph.title === "Parcours Professionnel" || paragraph.title === "Career paths" ? (
-                          <>
-                            {paragraph.description}
-                            <br />
-                            <a href="https://www.linkedin.com/company/mauna-kea-consulting-uk/mycompany/?viewAsMember=true" target="_blank" className="link">
-                              Mauna Kea Consulting LinkedIn
-                            </a>
-                          </>
-                        ) : (
-                          <>
-                            {paragraph.description}
-                            <a href="https://learn.microsoft.com/api/credentials/share/en-us/QuoamitresorkaletoADOSSI-2158/D41EE25637E5E015?sharingId=D18AA02016E9341B" target="_blank" className="link">
-                              Microsoft Certified: Fabric Analytics Engineer Associate
-                            </a>
-                            <br />
-                            <br />
-                            <a href="https://learn.microsoft.com/api/credentials/share/en-us/QuoamitresorkaletoADOSSI-2158/730F1F121A793929?sharingId=D18AA02016E9341B" target="_blank" className="link">
-                              Azure Data Fundamentals
-                            </a>
-                            <br />
-                            <br />
-                            <a href="https://learn.microsoft.com/api/credentials/share/en-us/QuoamitresorkaletoADOSSI-2158/B35437343A5E9BB4?sharingId=D18AA02016E9341B" target="_blank" className="link">
-                              Microsoft Certified: Power BI Data Analyst Associate
-                            </a>
-                          </>     
-                        )
-                      )}
+                    {paragraph.title === "Parcours Académique" || paragraph.title === "Academic background" ? (
+  <>
+    {paragraph.description}
+    <br />
+    <a href="https://www.esith.ac.ma/" target="_blank" className="link">
+      École nationale supérieure des industries du textile et de l'habillement (Casablanca-Morocco)
+    </a>
+  </>
+) : paragraph.title === "Contact" || paragraph.title === "Contact" ?
+ ( // Remplacer le second "Contact" par "Contact" en anglais
+
+ <div>
+    <p style={{ color: 'white' }}>Email : <a href="mailto:Fallahmed100@email.com" className="link">Fallahmed100@email.com</a></p>
+    <p style={{ color: 'white' }}>WhatsApp : <a href="https://wa.me/22241513211" className="link">+222 41 51 32 11</a></p>
+    <p style={{ color: 'white' }}>Téléphone : <a href="tel:+22241070318" className="link">+222 41 07 03 18</a></p>
+</div>
+
+) : (
+  <>
+    {paragraph.description}
+    <br />
+    <a href="https://www.linkedin.com/search/results/all/?fetchDeterministicClustersOnly=true&heroEntityKey=urn%3Ali%3Aorganization%3A70390145&keywords=ibtikar%20technologies&origin=RICH_QUERY_TYPEAHEAD_HISTORY&position=0&searchId=13f9ce0e-4cf2-4c04-832d-99253fee94f4&sid=ml)&spellCorrectionEnabled=true" target="_blank" className="link">
+      Ibtikar Technology
+    </a>
+  </>
+)}
+
                     </p>
                   </div>
                 </div>
