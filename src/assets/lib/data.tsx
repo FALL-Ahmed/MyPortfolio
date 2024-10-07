@@ -1,14 +1,15 @@
 import excelicon from "../../assets/icons/excelicon.svg";
 import powerBiicon from "../../assets/icons/powerBiicon.svg";
-import fabricIcon from "../../assets/icons/fabricIcon.svg"
+import TableauIcon from "../../assets/icons/Tableau.png"
 import sqlicon from "../../assets/icons/sqlicon.svg";
-import sparkicon from "../../assets/icons/sparkicon.svg";
+import dataMicon from "../../assets/icons/dataMart.svg";
 import pythonicon from "../../assets/icons/pythonicon.svg";
 import awsicon from "../../assets/icons/awsicon.svg";
-import hadoopicon from "../../assets/icons/Hadoopicon.svg";
-import javaIcon from "../../assets/icons/javaIcon.svg";
+import talendicon from "../../assets/icons/talend1.svg";
+import dataWIcon from "../../assets/icons/dataW.svg";
+import dataminIcon from "../../assets/icons/datamin.svg";
 import azureicon from "../../assets/icons/azureicon.svg";
-import scalaicon from "../../assets/icons/scalaicon.svg";
+import Ricon from "../../assets/icons/R.png";
 import ligue1 from "../../assets/img/Ligue 1.webp";
 // import bundesliga from "../../assets/img/Bundesliga.webp";
 // import liga from "../../assets/img/Liga.webp";
@@ -23,6 +24,11 @@ import { GoHome, GoPerson, GoMail, GoStack, GoProject } from "react-icons/go";
 import { FiGithub, FiLinkedin, FiMail, FiLink } from "react-icons/fi";
 import Imprint from "../../components/Imprint";
 import Privacy from "../../components/Privacy";
+import htmlicon from "../../assets/icons/htmlicon.svg";
+import cssicon from "../../assets/icons/cssicon.svg";
+import javascripticon from "../../assets/icons/javascripticon.svg";
+import iaicon from "../../assets/icons/AI.svg";
+import mlicon from "../../assets/icons/ML.svg";
 
 export const headerIntroData = {
   title: {
@@ -66,7 +72,7 @@ export const projectsData = [
     description_EN:
       "The project consists of extracting data (movies) from the TMDB API, transforming them and performing analyzes",
     technologies: [ 
-      { name: "Microsoft fabric", icon: fabricIcon },
+      { name: "Microsoft fabric", icon: TableauIcon },
     ],
     image: fabricProject,
     deploymenturl: "https://delightful-cheesecake-9b19f0.netlify.app/",
@@ -135,44 +141,39 @@ export const liveTickerData = {
 
 export const skillsDataWeb = [
   {
-    skillsTitle: "Data Engineering",
+    skillsTitle: "Compétences Supplémentaires",
     skills: [
-      {
-        title: "SQL",
-        hash: "#SQL",
-        icon: sqlicon,
-        color: "#61DAFB",
+      { 
+        title: "HTML",
+        hash: "#HTML",
+        icon: htmlicon, 
+        color: "#f48c06" 
       },
-      {
-        title: "Python",
-        hash: "#Python",
-        icon: pythonicon,
-        color: "#023047",
+      { 
+        title: "CSS",
+        hash: "#CSS",
+        icon: cssicon, 
+        color: "#00b4d8" 
       },
-      {
-        title: "Hapache Hadoop",
-        hash: "#HapacheHadoop",
-        icon: hadoopicon,
-        color: "#ffee32",
+      { 
+        title: "JAVASCRIPT",
+        hash: "#JAVASCRIPT",
+        icon: javascripticon, 
+        color: "#f5e130" 
       },
-      {
-        title: "Scala",
-        hash: "#scala",
-        icon: scalaicon,
-        color: "#d90429",
+      { 
+        title: "Intelligence Artificielle (IA)",
+        hash: "#Intelligence Artificielle (IA)",
+        icon: iaicon, 
+        color: "#FFFFFF" 
       },
-      {
-        title: "Spark",
-        hash: "#spark",
-        icon: sparkicon,
-        color: "#fb8500",
+      { 
+        title: "Machine Learning (ML)",
+        hash: "#Machine Learning (ML)",
+        icon: mlicon, 
+        color: "#eead05" 
       },
-      {
-        title: "Java",
-        hash: "#java",
-        icon: javaIcon,
-        color: "#fb8500",
-      },
+      
       
     ],
   },
@@ -192,7 +193,7 @@ export const skillsDataDesign = [
         title: "Python",
         hash: "#Python",
         icon: pythonicon,
-        color: "#023047",
+        color: "#e7aa0e",
       },
       { 
         title: "Power BI", 
@@ -207,10 +208,16 @@ export const skillsDataDesign = [
         color: "#2d6a4f"
        },
        {
-        title: "Fabric", 
-        hash: "#Fabric", 
-        icon: fabricIcon, 
-        color: "#2d6a4f"
+        title: "Tableau", 
+        hash: "#Tableau", 
+        icon: TableauIcon, 
+        color: "#0e2ae7"
+       },
+       {
+        title: "R Studio", 
+        hash: "#R Studio", 
+        icon: Ricon, 
+        color: "#0e2ae7"
        }
     ],
   },
@@ -218,20 +225,46 @@ export const skillsDataDesign = [
 
 export const skillsDataCMS = [
   {
-    skillsTitle: "Cloud Computing",
+    skillsTitle: "Business Intelligence",
     skills: [
-      { 
-        title: "AWS",
-        hash: "#aws",
-        icon: awsicon, 
-        color: "#f48c06" 
+      
+      {
+        title: "Data Warehouse",
+        hash: "#Data Warehouse",
+        icon: dataWIcon,
+        color: "#61DAFB",
+      },
+      {
+        title: "Data Mart",
+        hash: "#Data Mart",
+        icon: dataMicon,
+        color: "#e7150e",
+      },
+      {
+        title: "Data Mining",
+        hash: "#Data Mining",
+        icon: dataminIcon,
+        color: "#FFFFFF",
+      },
+      {
+        title: "Talend",
+        hash: "#Talend",
+        icon: talendicon,
+        color: "#669727",
       },
       { 
-        title: "Microsoft Azure",
-        hash: "#azure",
-        icon: azureicon, 
-        color: "#00b4d8" 
+        title: "Intelligence Artificielle (IA)",
+        hash: "#Intelligence Artificielle (IA)",
+        icon: iaicon, 
+        color: "#FFFFFF" 
       },
+      { 
+        title: "Machine Learning (ML)",
+        hash: "#Machine Learning (ML)",
+        icon: mlicon, 
+        color: "#eead05" 
+      },
+      
       
     ],
   },

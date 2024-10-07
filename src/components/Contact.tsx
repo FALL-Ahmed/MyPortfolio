@@ -41,7 +41,7 @@ const Contact: React.FC = () => {
     e.preventDefault();
     // const data = new FormData(e.currentTarget);
 
-      emailjs.sendForm('service_7qh1vjm', 'template_239w5nn', form.current as HTMLFormElement, '2-PKgVcoya4zzrZ0k')
+      emailjs.sendForm('service_hiwlpcl', 'template_wctakog', form.current as HTMLFormElement, 'OrKkqPCIofrnTsH7B')
       .then(() => {
         // console.log("sent"+ result.text)
         if (language === "FR") {

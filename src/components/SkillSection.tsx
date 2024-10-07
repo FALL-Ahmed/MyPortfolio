@@ -46,12 +46,10 @@ const SkillSection: React.FC<SkillSectionProps> = ({ skillsData, theme }) => {
 
   return (
     <article
-      className={`h-auto rounded-2xl p-16 pt-32 grid grid-cols-3 gap-10 relative z-10 max-lg:w-full max-lg:grid-cols-2 max-lg:p-8  max-lg:pt-32 ${
-        theme === "dark"
-          ? "bg-[--blackblue] dark-mode-shadow"
-          : "bg-[--icewhite] dark-shadow"
-      }`}
-    >
+  className={`h-auto rounded-2xl p-16 pt-32 grid grid-cols-3 gap-10 relative z-10 
+    max-lg:w-full max-lg:grid-cols-2 max-lg:p-8 max-lg:pt-32 
+    ${theme === "dark" ? "bg-[--blackblue] dark-mode-shadow" : "bg-[--icewhite] dark-shadow"}`}
+>
       <div
         className={`absolute top-10 left-1/2 transform -translate-x-1/2 px-4 py-2  rounded-t-xl `}
       >
@@ -64,7 +62,7 @@ const SkillSection: React.FC<SkillSectionProps> = ({ skillsData, theme }) => {
       {skillsData[0].skills.map((skill, index) => (
         <div
           key={index}
-          className={`skill-item cursor-pointer flex flex-col gap-6 rounded-2xl p-8 border-solid border-[0.25rem]  text-center max-lg:items-center    ${
+          className={`skill-item cursor-pointer flex flex-col gap-6 rounded-2xl p-8  border-solid border-[0.25rem]  text-center max-lg:items-center    ${
             theme === "dark" ? "bg-[--darkblue]" : "bg-[--icewhite]"
           }`}
           data-tooltip-id="my-tooltip"
@@ -94,9 +92,10 @@ const SkillSection: React.FC<SkillSectionProps> = ({ skillsData, theme }) => {
             alt={`${skill.icon}-icon`}
             className="h-[10rem]"
           />
-          <h3 className="max-lg:text-[2rem] min-[1024px]:hidden">
-            {skill.title}
-          </h3>
+          <h3 className="text-[2rem] mb-4">
+  {skill.title}
+</h3>
+
         </div>
       ))}
     </article>
