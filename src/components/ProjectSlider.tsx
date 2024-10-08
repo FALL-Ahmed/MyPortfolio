@@ -172,13 +172,7 @@ const ProjectSlider: React.FC = () => {
                     buttoncolor={project.colors.main}
                     iconcolor={project.colors.icon}
                   />
-                  <Button
-                    label="Github Repository"
-                    //link={project.githuburl}
-                    //iconSVG={project.githubicon}
-                    buttoncolor={project.colors.main}
-                    iconcolor={project.colors.icon}
-                  />
+                 
                 </div>
                 <p className="text-white  max-lg:text-4xl">
                   {language === "FR"
