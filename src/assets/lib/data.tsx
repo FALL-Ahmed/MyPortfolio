@@ -4,18 +4,14 @@ import TableauIcon from "../../assets/icons/Tableau.png"
 import sqlicon from "../../assets/icons/sqlicon.svg";
 import dataMicon from "../../assets/icons/dataMart.svg";
 import pythonicon from "../../assets/icons/pythonicon.svg";
-import awsicon from "../../assets/icons/awsicon.svg";
+import maurimap from "../../assets/img/Maurimap.png";
 import talendicon from "../../assets/icons/talend1.svg";
 import dataWIcon from "../../assets/icons/dataW.svg";
 import dataminIcon from "../../assets/icons/datamin.svg";
-import azureicon from "../../assets/icons/azureicon.svg";
 import Ricon from "../../assets/icons/R.png";
-import ligue1 from "../../assets/img/Ligue 1.webp";
-// import bundesliga from "../../assets/img/Bundesliga.webp";
-// import liga from "../../assets/img/Liga.webp";
-//import mammamia1 from "../../assets/img/slide1.webp";
+import medibien from "../../assets/img/medibien.png";
 import mammamia2 from "../../assets/img/slide2.webp";
-import fabricProject from "../../assets/img/fabricProject.png"
+import zephyr from "../../assets/img/zephyr.png"
 import profilepicture from "../img/me21.png";
 import contacticon from "../../assets/icons/contact.svg";
 import workicon from "../../assets/icons/work.svg";
@@ -35,10 +31,13 @@ export const headerIntroData = {
     fr: "Hi, C'est Ahmed",
     en: "Hi, I'm Ahmed",
   },
-  subtitle: "Ingénieur Data Analyst & Business Intelligence",
+  subtitle: {
+    fr: "Ingénieur Data Analyst & Business Intelligence",
+    en: "Data Analyst & Business Intelligence Engineer",
+  },
   description: {
-    fr: "Je suis FALL Ahmed, et les données sont ma passion. Dans chaque chiffre, je vois une opportunité cachée, et je suis ici pour les révéler. Laissez-vous inspirer par mon travail et faisons de vos données une force stratégique!",
-    en: "I am FALL Ahmed, and data is my passion. In every number, I see a hidden opportunity, and I am here to uncover it. Let yourself be inspired by my work, and together, let’s turn your data into a strategic asset!",
+    fr: "Je suis FALL Ahmed, un passionné d'analyse qui voit le potentiel caché derrière chaque donnée. j’aide les entreprises à visualiser et comprendre leurs données avec des tableaux de bord sur mesure, quel que soit le secteur d'activité. À mes yeux, chaque information est une clé qui peut ouvrir la porte à de nouvelles opportunités. Laissez-vous inspirer par  mes réalisations et faisons de vos chiffres une force stratégique!",
+    en: "I am FALL Ahmed, a passionate analyst who sees the hidden potential behind every piece of data. I help companies visualize and understand their data with tailor-made dashboards, whatever the sector of activity. In my eyes, every piece of information is a key that can unlock new opportunities. Let yourself be inspired by my achievements, and let's turn your numbers into a strategic asset!",
   },
   buttons: [
     {
@@ -66,18 +65,20 @@ export const headerIntroData = {
 
 export const projectsData = [
   {
-    title: "Analytics Engineering Project",
+    title: "ZEPHYR",
     description:
-      "Le projet consiste à extraire des données (films) de l'api de TMDB, les transformer et effectuer des analyses",
+      "Analyse des performances des ventes pour une marque de vêtements fictive. Ce rapport propose une évaluation détaillée des ventes actuelles, avec des prévisions stratégiques basées sur les tendances des saisons passées. Grâce à des visualisations claires, l’analyse met en lumière les segments de marché les plus performants et identifie des opportunités pour améliorer les actions marketing et augmenter les parts de marché.",
     description_EN:
-      "The project consists of extracting data (movies) from the TMDB API, transforming them and performing analyzes",
-    technologies: [ 
-      { name: "Microsoft fabric", icon: TableauIcon },
+      "Sales performance analysis for a fictitious clothing brand. This report offers a detailed assessment of current sales, with strategic forecasts based on past season trends. Through clear visualizations, the analysis highlights the segments of best performing market and identifies opportunities to improve marketing actions and increase market share.",
+      technologies: [
+        { name: "Power BI", icon: powerBiicon },
+        { name: "SQL", icon: sqlicon },
+      
     ],
-    image: fabricProject,
-    deploymenturl: "https://delightful-cheesecake-9b19f0.netlify.app/",
-    githuburl: "https://github.com/AlpayC/Frontend_Abschlussprojekt_Tasty",
-    githubicon: FiGithub,
+    image: zephyr,
+    deploymenturl: "https://app.powerbi.com/view?r=eyJrIjoiMjI5N2VjNTAtNTAyMC00MmU3LWFjYWItZmQ2ZWMwYmJhNTZhIiwidCI6ImZmOGM2MDkwLTU2ZmEtNDk3Ni05NzUxLTlhNTQwYzAxYzExMCJ9&pageName=0cdcea913f3e8a8c98dd",
+
+    
     deploymenticon: FiLink,
     colors: {
       main: "main-btn",
@@ -87,19 +88,41 @@ export const projectsData = [
     },
   },
   {
-    title: "Projet Mammamia",
+    title: "MauriMap",
     description:
-      "Analyse Régionale des ventes d'une société locale basée à Dakar. Ceci est le deuxième rapport qui donne l'aperçu des ventes par Région",
+      "MauriMap est un projet de cartographie qui présente l'ensemble des localités de Mauritanie, des villes aux villages, en indiquant la présence ou l'absence d'infrastructures clés telles que les lycées, collèges, centres de santé, réseaux électriques et points d'eau potable. Ce projet vise à faciliter la compréhension des ressources disponibles à travers le territoire national, et la prise de décision pour les autorités locales et les ONG en matière de développement et d'allocation des ressources.",
     description_EN:
-      "Regional sales analysis of a local company based in Dakar. This is the second report that provides the sales overview by Region",
+      "MauriMap is a mapping project that presents all localities in Mauritania, from towns to villages, indicating the presence or absence of key infrastructure such as high schools, colleges, health centers, electricity networks and points of contact. This project aims to facilitate the understanding of the resources available across the national territory, and decision-making for local authorities and NGOs in terms of development and resource allocation.",
+      technologies: [
+        { name: "Power BI", icon: powerBiicon },
+        { name: "Excel", icon: excelicon },
+      
+    ],
+    image: maurimap,
+    deploymenturl: "https://app.powerbi.com/view?r=eyJrIjoiZGQ2N2E1YjAtZThmNi00ZTg1LThmZGUtOWQxMDc1NzQ3NzI1IiwidCI6ImZmOGM2MDkwLTU2ZmEtNDk3Ni05NzUxLTlhNTQwYzAxYzExMCJ9",
+
+    
+    deploymenticon: FiLink,
+    colors: {
+      main: "main-btn",
+      second: "secondary-btn",
+      icon: "white",
+      projectcolor: "#70B9BE",
+    },
+  },
+  {
+    title: "Mammamia gelato",
+    description:
+      "Analyse régionale des ventes de MammaMia Gelato, une entreprise locale de Dakar spécialisée dans la vente de glaces. Ce rapport offre un aperçu détaillé des ventes par région, L’analyse a été réalisée à l’aide de Power BI, en se basant sur les données des ventes des trois derniers trimestres. Grâce à cette analyse, l’entreprise a identifié une opportunité de croissance de 20 % dans certaines régions clés et a pu adapter sa stratégie de distribution en conséquence.",
+    description_EN:
+      "Regional sales analysis of MammaMia Gelato, a local company in Dakar specializing in the sale of ice cream. This report provides a detailed overview of sales by region. The analysis was carried out using Power BI, based on sales data from the last three quarters Through this analysis, the company identified a 20% growth opportunity in certain key regions and was able to adapt its distribution strategy accordingly.",
     technologies: [
       { name: "Power BI", icon: powerBiicon },
       { name: "Excel", icon: excelicon },
     ],
     image: mammamia2,
-    deploymenturl: "https://delightful-cheesecake-9b19f0.netlify.app/",
-    githuburl: "https://github.com/AlpayC/Frontend_Abschlussprojekt_Tasty",
-    githubicon: FiGithub,
+    deploymenturl: "",
+    
     deploymenticon: FiLink,
     colors: {
       main: "main-btn",
@@ -109,19 +132,18 @@ export const projectsData = [
     },
   },
   {
-    title: "Palmarès",
+    title: "MEDIBIEN Centre Hospitalier",
     description:
-      "Palmarès des meilleurs clubs Français de 1900-2023",
+      "Ce rapport dynamique propose une cartographie des pathologies, une analyse des données patients, des tendances de santé et une optimisation des opérations et la satisfaction des clients, offrant aux hôpitaux des insights précieux pour améliorer la gestion des ressources et la qualité des soins.",
     description_EN:
-      "Top French clubs from 1900-2023",
+      "This dynamic report provides a mapping of pathologies, patient data analysis, health trends, and operational optimization, along with client satisfaction, offering hospitals valuable insights to enhance resource management and improve the quality of care.",
     technologies: [
       { name: "Power BI", icon: powerBiicon },
       { name: "Excel", icon: excelicon },
     ],
-    image: ligue1,
-    deploymenturl: "https://delightful-cheesecake-9b19f0.netlify.app/",
-    githuburl: "https://github.com/AlpayC/Frontend_Abschlussprojekt_Tasty",
-    githubicon: FiGithub,
+    image: medibien,
+    deploymenturl: "https://app.powerbi.com/view?r=eyJrIjoiMzFkZDFlNWQtN2VhNy00NTFkLWIwYTctNDU2NmE0YTNlNGY4IiwidCI6ImZmOGM2MDkwLTU2ZmEtNDk3Ni05NzUxLTlhNTQwYzAxYzExMCJ9",
+    
     deploymenticon: FiLink,
     colors: {
       main: "main-btn",
@@ -165,7 +187,7 @@ export const skillsDataWeb = [
         title: "Intelligence Artificielle (IA)",
         hash: "#Intelligence Artificielle (IA)",
         icon: iaicon, 
-        color: "#FFFFFF" 
+        color: "#004aad" 
       },
       { 
         title: "Machine Learning (ML)",
@@ -217,7 +239,7 @@ export const skillsDataDesign = [
         title: "R Studio", 
         hash: "#R Studio", 
         icon: Ricon, 
-        color: "#0e2ae7"
+        color: "#a6a6a6"
        }
     ],
   },
@@ -244,7 +266,7 @@ export const skillsDataCMS = [
         title: "Data Mining",
         hash: "#Data Mining",
         icon: dataminIcon,
-        color: "#FFFFFF",
+        color: "#00700c",
       },
       {
         title: "Talend",
@@ -256,7 +278,7 @@ export const skillsDataCMS = [
         title: "Intelligence Artificielle (IA)",
         hash: "#Intelligence Artificielle (IA)",
         icon: iaicon, 
-        color: "#FFFFFF" 
+        color: "#004aad" 
       },
       { 
         title: "Machine Learning (ML)",
@@ -308,9 +330,9 @@ export const sideBarLeftSocials = [
 
 export const quotesData = [
   {
-    fr: "Il ne s'agit pas d'avoir beaucoup de données, mais de savoir quoi en faire.",
-    en: "It's not about having a lot of data, but knowing what to do with it.",
-    author: "W. Edwards Deming",
+    fr: "Ce qui compte, ce n'est pas la quantité d'informations, mais la manière dont on les utilise.",
+    en: "The important thing is not the quantity of information, but how we use it.",
+    //author: "W. Edwards Deming",
   },
   {
     fr: '"Les données sont la clé pour libérer le potentiel de votre entreprise"',
@@ -443,8 +465,8 @@ export const contactData = {
   },
   privacyOptIn: {
     checkbox: {
-      fr: "J'accepte que Trésor utilise mes données personnelles (nom et adresse électronique) pour me contacter.",
-      en: "I agree that Trésor may use my personal data (name and e-mail address) to contact me.",
+      fr: "J'accepte que Ahmed utilise mes données personnelles (nom et adresse électronique) pour me contacter.",
+      en: "I agree that Ahmed may use my personal data (name and e-mail address) to contact me.",
     },
     description: {
       fr: "En soumettant cette demande, vous reconnaissez avoir pris connaissance de la politique privée",

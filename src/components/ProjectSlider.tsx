@@ -121,20 +121,25 @@ const ProjectSlider: React.FC = () => {
                       </div>
                     </div>
                     <div className="buttons flex gap-10 max-lg:flex-col">
-                  <Button
-                    label="Live Demo"
-                    link={project.deploymenturl}
-                    iconSVG={project.deploymenticon}
-                    buttoncolor={project.colors.main}
-                    iconcolor={project.colors.icon}
-                  />
-                  <Button
-                    label="Github Repository"
-                    link={project.githuburl}
-                    iconSVG={project.githubicon}
-                    buttoncolor={project.colors.main}
-                    iconcolor={project.colors.icon}
-                  />
+                    {project.title === "Mammamia gelato" ? (
+          <Button
+            label="(Confidentiel)"
+            onClick={() => alert("Le lien de la démo est confidentiel et ne peut pas être partagé.")}
+            iconSVG={project.deploymenticon}
+            buttoncolor={project.colors.main}
+            iconcolor={project.colors.icon}
+          />
+        ) : (
+          <Button
+            label="Live Demo"
+            link={project.deploymenturl}
+            iconSVG={project.deploymenticon}
+            buttoncolor={project.colors.main}
+            iconcolor={project.colors.icon}
+          />
+        )}
+
+                  
                 </div>
                   </div>
 
@@ -169,8 +174,8 @@ const ProjectSlider: React.FC = () => {
                   />
                   <Button
                     label="Github Repository"
-                    link={project.githuburl}
-                    iconSVG={project.githubicon}
+                    //link={project.githuburl}
+                    //iconSVG={project.githubicon}
                     buttoncolor={project.colors.main}
                     iconcolor={project.colors.icon}
                   />
