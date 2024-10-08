@@ -332,7 +332,7 @@ export const quotesData = [
   {
     fr: "Ce qui compte, ce n'est pas la quantité d'informations, mais la manière dont on les utilise.",
     en: "The important thing is not the quantity of information, but how we use it.",
-    //author: "W. Edwards Deming",
+    
   },
   {
     fr: '"Les données sont la clé pour libérer le potentiel de votre entreprise"',

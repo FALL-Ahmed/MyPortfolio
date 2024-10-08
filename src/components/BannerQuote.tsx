@@ -39,7 +39,7 @@ const BannerQuote: React.FC<BannerProps> = ({
             <h2 className="text-[--white] text-center text-8xl mb-20 mt-20 max-lg:text-[3rem] max-lg:mb-10 max-lg:leading-tight">
               {quoteTranslation}
             </h2>
-            <p className="text-[--grey]">{quotesData[0].author}</p>
+            
           </div>
         </div>
       </section>
