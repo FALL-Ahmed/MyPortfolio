@@ -165,13 +165,23 @@ const ProjectSlider: React.FC = () => {
                   className="h-[35vh] w-full object-cover object-top rounded-3xl"
                 />
                 <div className="buttons flex gap-10 max-lg:flex-col">
-                  <Button
-                    label="Live Demo"
-                    link={project.deploymenturl}
-                    iconSVG={project.deploymenticon}
-                    buttoncolor={project.colors.main}
-                    iconcolor={project.colors.icon}
-                  />
+                {project.title === "Mammamia gelato" ? (
+          <Button
+            label="(Confidentiel)"
+            onClick={() => alert("Le lien de la démo est confidentiel et ne peut pas être partagé.")}
+            iconSVG={project.deploymenticon}
+            buttoncolor={project.colors.main}
+            iconcolor={project.colors.icon}
+          />
+        ) : (
+          <Button
+            label="Live Demo"
+            link={project.deploymenturl}
+            iconSVG={project.deploymenticon}
+            buttoncolor={project.colors.main}
+            iconcolor={project.colors.icon}
+          />
+        )}
                  
                 </div>
                 <p className="text-white  max-lg:text-4xl">
