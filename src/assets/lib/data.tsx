@@ -354,7 +354,7 @@ export const aboutMeData = {
     },
     {
       title: "Parcours Professionnel",
-      description:  `Data Analyst & BI`,
+      description:  `Data Analyst Indépendant`,
       icon: workicon,
     },
     {
@@ -375,7 +375,7 @@ export const aboutMeData = {
     {
       title: "Career Paths",
       description:
-        `Data Analyst & BI`,
+        `Independent Data Analyst`,
       icon: workicon,
     },
     {
