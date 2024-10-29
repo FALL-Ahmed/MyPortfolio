@@ -1,6 +1,6 @@
 import excelicon from "../../assets/icons/excelicon.svg";
 import powerBiicon from "../../assets/icons/powerBiicon.svg";
-import TableauIcon from "../../assets/icons/Tableau.png"
+import FabricIcon from "../../assets/icons/fqbrics.png"
 import sqlicon from "../../assets/icons/sqlicon.svg";
 import dataMicon from "../../assets/icons/dataMart.svg";
 import pythonicon from "../../assets/icons/pythonicon.svg";
@@ -230,10 +230,10 @@ export const skillsDataDesign = [
         color: "#2d6a4f"
        },
        {
-        title: "Tableau", 
-        hash: "#Tableau", 
-        icon: TableauIcon, 
-        color: "#0e2ae7"
+        title: "Microsoft Fabric", 
+        hash: "#Microsoft Fabric", 
+        icon: FabricIcon, 
+        color: "#6fe9b8"
        },
        {
         title: "R Studio", 
