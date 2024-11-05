@@ -23,7 +23,7 @@ const HeaderIntro: React.FC = () => {
       <img
         src={headerIntroData.profilepicture}
         alt={headerIntroData.profilepicture}
-        className="w-1/6 drop-shadow-2xl rounded-full shadow-2xl avatar-img max-lg:w-3/4"
+        className="w-1/6 drop-shadow-2xl rounded-full shadow-2xl max-lg:w-3/4 "
       />
       <h1>
         {language === "FR"
