@@ -32,16 +32,16 @@ import apiicon from "../../assets/img/API.png";
 
 export const headerIntroData = {
   title: {
-    fr: "Hi, C'est Ahmed",
-    en: "Hi, I'm Ahmed",
+    fr: "Hi, C'est Mohamed",
+    en: "Hi, I'm Mohamed",
   },
   subtitle: {
-    fr: "Ingénieur Data Analyst & Business Intelligence",
-    en: "Data Analyst & Business Intelligence Engineer",
+    fr: "Analyse de données & Finance, Comptabilité",
+    en: "Data Analysis & Finance, Accounting",
   },
   description: {
-    fr: "Je suis FALL Ahmed, un passionné d'analyse qui voit le potentiel caché derrière chaque donnée. j’aide les entreprises à visualiser et comprendre leurs données avec des tableaux de bord sur mesure, quel que soit le secteur d'activité. À mes yeux, chaque information est une clé qui peut ouvrir la porte à de nouvelles opportunités. Laissez-vous inspirer par  mes réalisations et faisons de vos chiffres une force stratégique!",
-    en: "I am FALL Ahmed, a passionate analyst who sees the hidden potential behind every piece of data. I help companies visualize and understand their data with tailor-made dashboards, whatever the sector of activity. In my eyes, every piece of information is a key that can unlock new opportunities. Let yourself be inspired by my achievements, and let's turn your numbers into a strategic asset!",
+    fr: "Je suis Mohamed Ahmed, un passionné d'analyse qui voit le potentiel caché derrière chaque donnée. j’aide les entreprises à visualiser et comprendre leurs données avec des tableaux de bord sur mesure, quel que soit le secteur d'activité. À mes yeux, chaque information est une clé qui peut ouvrir la porte à de nouvelles opportunités. Laissez-vous inspirer par  mes réalisations et faisons de vos chiffres une force stratégique!",
+    en: "I am Mohamed Ahmed, a passionate analyst who sees the hidden potential behind every piece of data. I help companies visualize and understand their data with tailor-made dashboards, whatever the sector of activity. In my eyes, every piece of information is a key that can unlock new opportunities. Let yourself be inspired by my achievements, and let's turn your numbers into a strategic asset!",
   },
   buttons: [
     {
@@ -340,23 +340,23 @@ export const FooterLinks = [
 ] as const;
 
 export const sideBarRightMail = {
-  link: "mailto:fallahmed100@gmail.com",
-  text: "fallahmed100@gmail.com",
+  link: "mailto:MedKoumba@gmail.com",
+  text: "MedKoumba@gmail.com",
 } as const;
 
 export const sideBarLeftSocials = [
   {
-    link: "https://www.linkedin.com/in/ahmed-fall-fall/",
+    link: "https://www.linkedin.com/in/mohammed-ahmed-052769239/",
     icon: FiLinkedin,
     altimgname: "linkedin",
   },
   {
-    link: "https://github.com/FALL-Ahmed",
+    link: "https://github.com/MohamedAhmeddiye",
     icon: FiGithub,
     altimgname: "github",
   },
   {
-    link: "mailto:fallahmed100@gmail.com",
+    link: "mailto:MedKoumba@gmail.com",
     icon: FiMail,
     altimgname: "mail",
   },
@@ -383,18 +383,18 @@ export const aboutMeData = {
     {
       title: "Parcours Académique",
       description:
-        `Diplôme d'Ingénieur en Informatique et Management des Systèmes`,
+        `Diplôme en Banque et Assurance Actuellement Etudiant en master en finance et fiscalité`,
       icon: hardwareicon,
     },
     {
       title: "Parcours Professionnel",
-      description:  `Data Analyst Indépendant`,
+      description:  `Analyste de données indépendant, financier & comptable`,
       icon: workicon,
     },
     {
       title: "Contact",
       description:
-        `Data Engineer & BI Developer, Mauna Kea Consulting`,
+        `Analyste de données, Office National de la Météorologie.`,
       icon: contacticon,
     },
     
@@ -403,19 +403,19 @@ export const aboutMeData = {
     {
       title: "Academic background",
       description:
-        `Engineering Degree in Computer Science and Systems Management`,    
+        `Degree in Banking and Insurance, Professional Bachelor's Degree. Currently a student in Master's in Finance and Taxation.`,    
       icon: hardwareicon,
     },
     {
       title: "Career Paths",
       description:
-        `Independent Data Analyst`,
+        `Independent data analyst, financial & accountant.`,
       icon: workicon,
     },
     {
       title: "Contact",
       description:
-        `Data Engineer & BI Developer, Mauna Kea Consulting`,
+        `Data Analyst, National Meteorological Office.`,
       icon: contacticon,
     },
   ],
@@ -499,8 +499,8 @@ export const contactData = {
   },
   privacyOptIn: {
     checkbox: {
-      fr: "J'accepte que Ahmed utilise mes données personnelles (nom et adresse électronique) pour me contacter.",
-      en: "I agree that Ahmed may use my personal data (name and e-mail address) to contact me.",
+      fr: "J'accepte que Mohamed utilise mes données personnelles (nom et adresse électronique) pour me contacter.",
+      en: "I agree that Mohamed may use my personal data (name and e-mail address) to contact me.",
     },
     description: {
       fr: "En soumettant cette demande, vous reconnaissez avoir pris connaissance de la politique privée",

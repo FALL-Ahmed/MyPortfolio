@@ -116,25 +116,25 @@ const AboutMe: React.FC = () => {
   <>
     {paragraph.description}
     <br />
-    <a href="https://www.esith.ac.ma/" target="_blank" className="link">
-      École nationale supérieure des industries du textile et de l'habillement (Casablanca-Morocco)
+    <a href="https://www.mesrs.gov.mr/fr/universites-publiques-0" target="_blank" className="link">
+    Faculté de sciences juridiques et économiques (Université de Nouakchott Alaasriya)
     </a>
   </>
 ) : paragraph.title === "Contact" || paragraph.title === "Contact" ?
  ( // Remplacer le second "Contact" par "Contact" en anglais
 
  <div>
-    <p style={{ color: 'white' }}>Email : <a href="mailto:Fallahmed100@email.com" className="link">Fallahmed100@email.com</a></p>
-    <p style={{ color: 'white' }}>WhatsApp : <a href="https://wa.me/22241513211" className="link">+222 41 51 32 11</a></p>
-    <p style={{ color: 'white' }}>Téléphone : <a href="tel:+22241070318" className="link">+222 41 07 03 18</a></p>
+    <p style={{ color: 'white' }}>Email : <a href="mailto:MedKoumba@gmail.com" className="link">MedKoumba@gmail.com</a></p>
+    <p style={{ color: 'white' }}>WhatsApp : <a href="https://wa.me/22244121245" className="link">+222 44 12 12 45</a></p>
+    <p style={{ color: 'white' }}>Téléphone : <a href="tel:+22244121245" className="link">+222 44 12 12 45</a></p>
 </div>
 
 ) : (
   <>
     {paragraph.description}
     <br />
-    <a href="https://www.linkedin.com/search/results/all/?fetchDeterministicClustersOnly=true&heroEntityKey=urn%3Ali%3Aorganization%3A70390145&keywords=ibtikar%20technologies&origin=RICH_QUERY_TYPEAHEAD_HISTORY&position=0&searchId=13f9ce0e-4cf2-4c04-832d-99253fee94f4&sid=ml)&spellCorrectionEnabled=true" target="_blank" className="link">
-      Ibtikar Technology
+    <a href="#" target="_blank" className="link">
+      Office National de Météorologie
     </a>
   </>
 )}
