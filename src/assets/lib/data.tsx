@@ -2,12 +2,12 @@ import excelicon from "../../assets/icons/excelicon.svg";
 import powerBiicon from "../../assets/icons/powerBiicon.svg";
 import FabricIcon from "../../assets/icons/fqbrics.png"
 import sqlicon from "../../assets/icons/sqlicon.svg";
-import dataMicon from "../../assets/icons/dataMart.svg";
+import qlikicon from "../../assets/icons/qlik.png";
 import pythonicon from "../../assets/icons/pythonicon.svg";
 import maurimap from "../../assets/img/Maurimap.png";
 import hadoopicon from "../../assets/img/hadoop.png";
 import dataWIcon from "../../assets/icons/dataW.svg";
-import dataminIcon from "../../assets/icons/datamin.svg";
+import TableauIcon from "../../assets/icons/Tableau.png";
 import Ricon from "../../assets/icons/R.png";
 import medibien from "../../assets/img/medibien.png";
 import mammamia2 from "../../assets/img/slide2.webp";
@@ -21,13 +21,13 @@ import { GoHome, GoPerson, GoMail, GoStack, GoProject } from "react-icons/go";
 import { FiGithub, FiLinkedin, FiMail, FiLink } from "react-icons/fi";
 import Imprint from "../../components/Imprint";
 import Privacy from "../../components/Privacy";
-import htmlicon from "../../assets/icons/htmlicon.svg";
-import cssicon from "../../assets/icons/cssicon.svg";
+import awsicon from "../../assets/icons/awsicon.svg";
+import gcpicon from "../../assets/icons/gcp.svg";
 import javascripticon from "../../assets/icons/javascripticon.svg";
 import iaicon from "../../assets/icons/AI.svg";
 import mlicon from "../../assets/icons/ML.svg";
-import Gurobiicon from "../../assets/img/Gurobi.png";
-import roicon from "../../assets/img/RO.png";
+import sparkicon from "../../assets/icons/sparkicon.svg";
+import hiveicon from "../../assets/icons/Hive.svg";
 import apiicon from "../../assets/img/API.png";
 
 export const headerIntroData = {
@@ -193,15 +193,15 @@ export const skillsDataWeb = [
     skillsTitle: "Compétences Supplémentaires",
     skills: [
       { 
-        title: "HTML",
-        hash: "#HTML",
-        icon: htmlicon, 
+        title: "AWS",
+        hash: "#AWS",
+        icon: awsicon, 
         color: "#f48c06" 
       },
       { 
-        title: "CSS",
-        hash: "#CSS",
-        icon: cssicon, 
+        title: "GCP",
+        hash: "#GCP",
+        icon: gcpicon, 
         color: "#00b4d8" 
       },
       { 
@@ -211,16 +211,16 @@ export const skillsDataWeb = [
         color: "#f5e130" 
       },
       { 
-        title: "Gurobi Optimization",
-        hash: "#gurobi",
-        icon: Gurobiicon, 
+        title: "Spark",
+        hash: "#Spark",
+        icon: sparkicon, 
         color: "#ffffff" 
       },
       { 
-        title: "Recherche Opérationnelle",
-        hash: "#RO",
-        icon: roicon, 
-        color: "#ff3131" 
+        title: "hive",
+        hash: "#hive",
+        icon: hiveicon, 
+        color: "#000000" 
       },
       { 
         title: "API",
@@ -291,16 +291,16 @@ export const skillsDataCMS = [
         color: "#61DAFB",
       },
       {
-        title: "Data Mart",
-        hash: "#Data Mart",
-        icon: dataMicon,
-        color: "#e7150e",
+        title: "Qlik",
+        hash: "#Qlik",
+        icon: qlikicon,
+        color: "#00700c",
       },
       {
-        title: "Data Mining",
-        hash: "#Data Mining",
-        icon: dataminIcon,
-        color: "#00700c",
+        title: "Tableau",
+        hash: "#Tableau",
+        icon: TableauIcon,
+        color: "#ffffff",
       },
       {
         title: "Hadoop",
