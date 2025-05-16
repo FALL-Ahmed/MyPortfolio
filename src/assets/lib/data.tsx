@@ -5,7 +5,7 @@ import sqlicon from "../../assets/icons/sqlicon.svg";
 import Dataicon from "../../assets/icons/Data-Governance.png";
 import pythonicon from "../../assets/icons/pythonicon.svg";
 import maurimap from "../../assets/img/Maurimap.png";
-import Teradataicon from "../../assets/img/Teradata.png";
+import Teradataicon from "../../assets/icons/Teradata.png";
 import dataWIcon from "../../assets/icons/dataW.svg";
 import TableauIcon from "../../assets/icons/Tableau.png";
 import Ricon from "../../assets/icons/R.png";
