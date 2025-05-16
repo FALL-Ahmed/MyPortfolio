@@ -5,7 +5,7 @@ import sqlicon from "../../assets/icons/sqlicon.svg";
 import Dataicon from "../../assets/icons/Data-Governance.png";
 import pythonicon from "../../assets/icons/pythonicon.svg";
 import maurimap from "../../assets/img/Maurimap.png";
-import hadoopicon from "../../assets/img/hadoop.png";
+import Teradataicon from "../../assets/img/Teradata.png";
 import dataWIcon from "../../assets/icons/dataW.svg";
 import TableauIcon from "../../assets/icons/Tableau.png";
 import Ricon from "../../assets/icons/R.png";
@@ -303,9 +303,9 @@ export const skillsDataCMS = [
         color: "#ffffff",
       },
       {
-        title: "Hadoop",
-        hash: "#hadoop",
-        icon: hadoopicon,
+        title: "Teradata",
+        hash: "#Teradata",
+        icon: Teradataicon,
         color: "#f6f612",
       },
       { 
