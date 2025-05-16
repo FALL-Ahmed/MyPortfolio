@@ -2,7 +2,7 @@ import excelicon from "../../assets/icons/excelicon.svg";
 import powerBiicon from "../../assets/icons/powerBiicon.svg";
 import FabricIcon from "../../assets/icons/fqbrics.png"
 import sqlicon from "../../assets/icons/sqlicon.svg";
-import qlikicon from "../../assets/icons/qlik.png";
+import Dataicon from "../../assets/icons/Data-Governance.png";
 import pythonicon from "../../assets/icons/pythonicon.svg";
 import maurimap from "../../assets/img/Maurimap.png";
 import hadoopicon from "../../assets/img/hadoop.png";
@@ -22,12 +22,12 @@ import { FiGithub, FiLinkedin, FiMail, FiLink } from "react-icons/fi";
 import Imprint from "../../components/Imprint";
 import Privacy from "../../components/Privacy";
 import awsicon from "../../assets/icons/awsicon.svg";
-import gcpicon from "../../assets/icons/gcp.svg";
+import SAPicon from "../../assets/icons/SAP.png";
 import javascripticon from "../../assets/icons/javascripticon.svg";
 import iaicon from "../../assets/icons/AI.svg";
 import mlicon from "../../assets/icons/ML.svg";
-import sparkicon from "../../assets/icons/sparkicon.svg";
-import hiveicon from "../../assets/icons/Hive.svg";
+import Dockericon from "../../assets/icons/Docker.png";
+import Kubericon from "../../assets/icons/Kubernetes.png";
 import apiicon from "../../assets/img/API.png";
 
 export const headerIntroData = {
@@ -199,9 +199,9 @@ export const skillsDataWeb = [
         color: "#f48c06" 
       },
       { 
-        title: "GCP",
-        hash: "#GCP",
-        icon: gcpicon, 
+        title: "SAP CLOUD",
+        hash: "#SAP CLOUD",
+        icon: SAPicon, 
         color: "#00b4d8" 
       },
       { 
@@ -211,15 +211,15 @@ export const skillsDataWeb = [
         color: "#f5e130" 
       },
       { 
-        title: "Spark",
-        hash: "#Spark",
-        icon: sparkicon, 
+        title: "Docker",
+        hash: "#Docker",
+        icon: Dockericon, 
         color: "#ffffff" 
       },
       { 
-        title: "hive",
-        hash: "#hive",
-        icon: hiveicon, 
+        title: "Kubernetes",
+        hash: "#Kubernetes",
+        icon: Kubericon, 
         color: "#000000" 
       },
       { 
@@ -291,9 +291,9 @@ export const skillsDataCMS = [
         color: "#61DAFB",
       },
       {
-        title: "Qlik",
-        hash: "#Qlik",
-        icon: qlikicon,
+        title: "Data Gouv",
+        hash: "#Data gouv",
+        icon: Dataicon,
         color: "#00700c",
       },
       {
