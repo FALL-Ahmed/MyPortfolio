@@ -3,7 +3,7 @@ import { useEffect, useState } from "react";
 import { useInView } from "react-intersection-observer";
 import type { SectionName } from "./types";
 
-export function useSectionInView(sectionName: SectionName, threshold = 0.75) {
+export function useSectionInView(sectionName: SectionName, threshold = 0.4) {
   const isMobile = window.innerWidth <= 1024;
   const { ref, inView } = useInView({
     threshold: isMobile ? 0.1 : threshold,

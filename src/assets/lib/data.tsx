@@ -1,19 +1,14 @@
-import excelicon from "../../assets/icons/excelicon.svg";
+﻿import excelicon from "../../assets/icons/excelicon.svg";
 import powerBiicon from "../../assets/icons/powerBiicon.svg";
-import FabricIcon from "../../assets/icons/fqbrics.png"
 import sqlicon from "../../assets/icons/sqlicon.svg";
-import Dataicon from "../../assets/icons/Data-Governance.png";
 import pythonicon from "../../assets/icons/pythonicon.svg";
-import maurimap from "../../assets/img/Maurimap.png";
-import Teradataicon from "../../assets/icons/Teradata.png";
 import dataWIcon from "../../assets/icons/dataW.svg";
-import TableauIcon from "../../assets/icons/Tableau.png";
-import Ricon from "../../assets/icons/R.png";
 import medibien from "../../assets/img/medibien.png";
-import mammamia2 from "../../assets/img/slide2.webp";
-import zephyr from "../../assets/img/zephyr.png"
 import inpc from "../../assets/img/inpc.png"
 import profilepicture from "../img/me21.png";
+import madrastak from "../../assets/img/madrastak.png";
+import profia from "../../assets/img/profia.jpg";
+import tchoopp from "../../assets/img/tchoopp.jpg";
 import contacticon from "../../assets/icons/contact.svg";
 import workicon from "../../assets/icons/work.svg";
 import hardwareicon from "../../assets/icons/hardware-icon.svg";
@@ -22,12 +17,9 @@ import { FiGithub, FiLinkedin, FiMail, FiLink } from "react-icons/fi";
 import Imprint from "../../components/Imprint";
 import Privacy from "../../components/Privacy";
 import awsicon from "../../assets/icons/awsicon.svg";
-import SAPicon from "../../assets/icons/SAP.png";
 import javascripticon from "../../assets/icons/javascripticon.svg";
 import iaicon from "../../assets/icons/AI.svg";
 import mlicon from "../../assets/icons/ML.svg";
-import Dockericon from "../../assets/icons/Docker.png";
-import Kubericon from "../../assets/icons/Kubernetes.png";
 import apiicon from "../../assets/img/API.png";
 
 export const headerIntroData = {
@@ -36,12 +28,12 @@ export const headerIntroData = {
     en: "Hi, I'm Ahmed",
   },
   subtitle: {
-    fr: "Ingénieur Data Analyst & Business Intelligence",
-    en: "Data Analyst & Business Intelligence Engineer",
+    fr: "Ingénieur Data, IA Générative & Agents IA",
+    en: "Data, Generative AI & AI Agents Engineer",
   },
   description: {
-    fr: "Je suis FALL Ahmed, un passionné d'analyse qui voit le potentiel caché derrière chaque donnée. j’aide les entreprises à visualiser et comprendre leurs données avec des tableaux de bord sur mesure, quel que soit le secteur d'activité. À mes yeux, chaque information est une clé qui peut ouvrir la porte à de nouvelles opportunités. Laissez-vous inspirer par  mes réalisations et faisons de vos chiffres une force stratégique!",
-    en: "I am FALL Ahmed, a passionate analyst who sees the hidden potential behind every piece of data. I help companies visualize and understand their data with tailor-made dashboards, whatever the sector of activity. In my eyes, every piece of information is a key that can unlock new opportunities. Let yourself be inspired by my achievements, and let's turn your numbers into a strategic asset!",
+    fr: "Je suis FALL Ahmed, ingénieur spécialisé en IA générative et systèmes agents. Je conçois et industrialise des assistants intelligents, des pipelines RAG avancés et des architectures multi-agents pour les entreprises. Je transforme vos défis métier en solutions IA robustes et scalables.",
+    en: "I am FALL Ahmed, an engineer specializing in generative AI and agent systems. I design and industrialize intelligent assistants, advanced RAG pipelines, and multi-agent architectures for enterprise environments. I transform your business challenges into robust, scalable AI solutions.",
   },
   buttons: [
     {
@@ -69,108 +61,103 @@ export const headerIntroData = {
 
 export const projectsData = [
   {
-    title: "Analyse INPC - Mauritanie",
+    title: "Professeur IA",
     description:
-      "Ce projet consiste en une analyse approfondie de l'indice national des prix à la consommation (INPC) en Mauritanie, en se concentrant sur les variations mensuelles et annuelles selon les fonctions et nomenclatures secondaires. L'objectif est de fournir une vision claire de l’évolution des prix dans des secteurs spécifiques tels que l'alimentation, le logement, et d'autres biens essentiels. ",
+      "J’ai construit un professeur IA qui répond mieux que la plupart des humains sur le programme SVT. Le pipeline RAG extrait le manuel scolaire, le découpe, l’indexe dans FAISS et retrouve les passages exacts en millisecondes. Claude ou Mistral génère ensuite des réponses adaptées au niveau de l’élève. Zéro hallucination sur le programme. Tourne en local ou en cloud.",
     description_EN:
-      "This project involves an in-depth analysis of the National Consumer Price Index (INPC) in Mauritania, focusing on monthly and annual variations according to functions and secondary classifications. The goal is to provide a clear view of price evolution in specific sectors such as food, housing, and other essential goods. ",
-      technologies: [
-        { name: "Power BI", icon: powerBiicon },
-        { name: "Excel", icon: excelicon },
-      
+      "Mobile application in development for Mauritanian students. Covers all subjects of the official national curriculum, answers students' questions 24/7 and adapts responses to each student's level. Built on a RAG architecture with FAISS vector indexing and response generation via Claude (Anthropic) or Mistral.",
+    technologies: [
+      { name: "Python", icon: pythonicon },
+      { name: "FAISS", icon: mlicon },
+      { name: "Claude Anthropic", icon: iaicon },
+      { name: "FastAPI", icon: apiicon },
     ],
-    image: inpc,
-    deploymenturl: "https://app.powerbi.com/view?r=eyJrIjoiYjRjZDkwN2UtYmYwZC00OWE0LWE3NGMtYTRjODg1NjE4OWE2IiwidCI6ImZmOGM2MDkwLTU2ZmEtNDk3Ni05NzUxLTlhNTQwYzAxYzExMCJ9&pageName=9f4a0c8894036de6b02e",
-
-    
-    deploymenticon: FiLink,
+    image: profia,
+    deploymenturl: "",
+    deploymenticon: FiGithub,
     colors: {
       main: "main-btn",
       second: "secondary-btn",
       icon: "white",
-      projectcolor: "#70B9BE",
+      projectcolor: "#7B2FBE",
     },
   },
   {
-    title: "ZEPHYR",
+    title: "Tchoop — Plateforme de Livraison",
     description:
-      "Analyse des performances des ventes pour une marque de vêtements fictive. Ce rapport propose une évaluation détaillée des ventes actuelles, avec des prévisions stratégiques basées sur les tendances des saisons passées. Grâce à des visualisations claires, l’analyse met en lumière les segments de marché les plus performants et identifie des opportunités pour améliorer les actions marketing et augmenter les parts de marché.",
+      "Startup de livraison de repas en Mauritanie. Application mobile multi-rôles (client, livreur, restaurant, admin) couvrant la gestion des commandes en temps réel, les paiements, la géolocalisation et les notifications push. Intègre 3 agents IA autonomes déployés en production (marketing, social media, récupération de paniers abandonnés) ainsi qu'un chatbot IA pour piloter la plateforme.",
     description_EN:
-      "Sales performance analysis for a fictitious clothing brand. This report offers a detailed assessment of current sales, with strategic forecasts based on past season trends. Through clear visualizations, the analysis highlights the segments of best performing market and identifies opportunities to improve marketing actions and increase market share.",
-      technologies: [
-        { name: "Power BI", icon: powerBiicon },
-        { name: "SQL", icon: sqlicon },
-      
+      "Food delivery startup in Mauritania. Multi-role mobile application (client, deliverer, restaurant, admin) covering real-time order management, payments, geolocation and push notifications. Integrates 3 autonomous AI agents deployed in production (marketing, social media, cart abandonment recovery) and an AI chatbot to manage the platform.",
+    technologies: [
+      { name: "Claude API", icon: iaicon },
+      { name: "React Native", icon: javascripticon },
+      { name: "Firebase", icon: awsicon },
+      { name: "TypeScript", icon: javascripticon },
     ],
-    image: zephyr,
-    deploymenturl: "https://app.powerbi.com/view?r=eyJrIjoiMjI5N2VjNTAtNTAyMC00MmU3LWFjYWItZmQ2ZWMwYmJhNTZhIiwidCI6ImZmOGM2MDkwLTU2ZmEtNDk3Ni05NzUxLTlhNTQwYzAxYzExMCJ9&pageName=0cdcea913f3e8a8c98dd",
-
-    
-    deploymenticon: FiLink,
+    image: tchoopp,
+    deploymenturl: "",
+    deploymenticon: FiGithub,
     colors: {
       main: "main-btn",
       second: "secondary-btn",
       icon: "white",
-      projectcolor: "#70B9BE",
+      projectcolor: "#FF7000",
     },
   },
   {
-    title: "MauriMap",
+    title: "Madrastak",
     description:
-      "MauriMap est un projet de cartographie qui présente l'ensemble des localités de Mauritanie, des villes aux villages, en indiquant la présence ou l'absence d'infrastructures clés telles que les lycées, collèges, centres de santé, réseaux électriques et points d'eau potable. Ce projet vise à faciliter la compréhension des ressources disponibles à travers le territoire national, et la prise de décision pour les autorités locales et les ONG en matière de développement et d'allocation des ressources.",
+      "Plateforme SaaS de gestion scolaire couvrant les absences, emplois du temps, notes, bulletins et tableaux de bord administratifs. Architecture moderne avec backend NestJS (API REST) et frontend React. Conçue pour les établissements scolaires avec gestion multi-rôles (admin, enseignant, parent, élève).",
     description_EN:
-      "MauriMap is a mapping project that presents all localities in Mauritania, from towns to villages, indicating the presence or absence of key infrastructure such as high schools, colleges, health centers, electricity networks and points of contact. This project aims to facilitate the understanding of the resources available across the national territory, and decision-making for local authorities and NGOs in terms of development and resource allocation.",
-      technologies: [
-        { name: "Power BI", icon: powerBiicon },
-        { name: "Excel", icon: excelicon },
-      
+      "School management SaaS platform covering absences, schedules, grades, report cards and administrative dashboards. Modern architecture with NestJS backend (REST API) and React frontend. Designed for educational institutions with multi-role management (admin, teacher, parent, student).",
+    technologies: [
+      { name: "NestJS", icon: javascripticon },
+      { name: "React", icon: javascripticon },
+      { name: "SQL", icon: sqlicon },
+      { name: "API REST", icon: apiicon },
     ],
-    image: maurimap,
-    deploymenturl: "https://app.powerbi.com/view?r=eyJrIjoiZGQ2N2E1YjAtZThmNi00ZTg1LThmZGUtOWQxMDc1NzQ3NzI1IiwidCI6ImZmOGM2MDkwLTU2ZmEtNDk3Ni05NzUxLTlhNTQwYzAxYzExMCJ9",
-
-    
-    deploymenticon: FiLink,
+    image: madrastak,
+    deploymenturl: "",
+    deploymenticon: FiGithub,
     colors: {
       main: "main-btn",
       second: "secondary-btn",
       icon: "white",
-      projectcolor: "#70B9BE",
+      projectcolor: "#2d6a4f",
     },
   },
   {
-    title: "Mammamia gelato",
+    title: "Analyse INPC — Mauritanie",
     description:
-      "Analyse régionale des ventes de MammaMia Gelato, une entreprise locale de Dakar spécialisée dans la vente de glaces. Ce rapport offre un aperçu détaillé des ventes par région, L’analyse a été réalisée à l’aide de Power BI, en se basant sur les données des ventes des trois derniers trimestres. Grâce à cette analyse, l’entreprise a identifié une opportunité de croissance de 20 % dans certaines régions clés et a pu adapter sa stratégie de distribution en conséquence.",
+      "Analyse approfondie de l’Indice National des Prix à la Consommation en Mauritanie, couvrant les variations mensuelles et annuelles par secteur (alimentation, logement, biens essentiels). Fournit une vision claire de l’évolution des prix pour appuyer la prise de décision économique.",
     description_EN:
-      "Regional sales analysis of MammaMia Gelato, a local company in Dakar specializing in the sale of ice cream. This report provides a detailed overview of sales by region. The analysis was carried out using Power BI, based on sales data from the last three quarters Through this analysis, the company identified a 20% growth opportunity in certain key regions and was able to adapt its distribution strategy accordingly.",
+      "In-depth analysis of the National Consumer Price Index in Mauritania, covering monthly and annual variations by sector (food, housing, essential goods). Provides a clear view of price evolution to support economic decision-making.",
     technologies: [
       { name: "Power BI", icon: powerBiicon },
       { name: "Excel", icon: excelicon },
     ],
-    image: mammamia2,
-    deploymenturl: "",
-    
+    image: inpc,
+    deploymenturl: "https://app.powerbi.com/view?r=eyJrIjoiYjRjZDkwN2UtYmYwZC00OWE0LWE3NGMtYTRjODg1NjE4OWE2IiwidCI6ImZmOGM2MDkwLTU2ZmEtNDk3Ni05NzUxLTlhNTQwYzAxYzExMCJ9&pageName=9f4a0c8894036de6b02e",
     deploymenticon: FiLink,
     colors: {
       main: "main-btn",
       second: "secondary-btn",
       icon: "white",
-      projectcolor: "#E3964A",
+      projectcolor: "#70B9BE",
     },
   },
   {
     title: "MEDIBIEN Centre Hospitalier",
     description:
-      "Ce rapport dynamique propose une cartographie des pathologies, une analyse des données patients, des tendances de santé et une optimisation des opérations et la satisfaction des clients, offrant aux hôpitaux des insights précieux pour améliorer la gestion des ressources et la qualité des soins.",
+      "Rapport dynamique proposant une cartographie des pathologies, une analyse des données patients, des tendances de santé et une optimisation des opérations hospitalières. Offre aux établissements des insights précieux pour améliorer la gestion des ressources et la qualité des soins.",
     description_EN:
-      "This dynamic report provides a mapping of pathologies, patient data analysis, health trends, and operational optimization, along with client satisfaction, offering hospitals valuable insights to enhance resource management and improve the quality of care.",
+      "Dynamic report providing a mapping of pathologies, patient data analysis, health trends, and hospital operational optimization. Offers valuable insights to healthcare institutions to improve resource management and quality of care.",
     technologies: [
       { name: "Power BI", icon: powerBiicon },
       { name: "Excel", icon: excelicon },
     ],
     image: medibien,
     deploymenturl: "https://app.powerbi.com/view?r=eyJrIjoiMzFkZDFlNWQtN2VhNy00NTFkLWIwYTctNDU2NmE0YTNlNGY4IiwidCI6ImZmOGM2MDkwLTU2ZmEtNDk3Ni05NzUxLTlhNTQwYzAxYzExMCJ9",
-    
     deploymenticon: FiLink,
     colors: {
       main: "main-btn",
@@ -190,138 +177,96 @@ export const liveTickerData = {
 
 export const skillsDataWeb = [
   {
-    skillsTitle: "Compétences Supplémentaires",
+    skillsTitle: "Dev & Data",
     skills: [
-      { 
-        title: "AWS",
-        hash: "#AWS",
-        icon: awsicon, 
-        color: "#f48c06" 
+      {
+        title: "React / React Native",
+        hash: "#React",
+        icon: javascripticon,
+        color: "#61DAFB"
       },
-      { 
-        title: "SAP CLOUD",
-        hash: "#SAP CLOUD",
-        icon: SAPicon, 
-        color: "#00b4d8" 
+      {
+        title: "Node.js / NestJS",
+        hash: "#NodeJS",
+        icon: javascripticon,
+        color: "#68A063"
       },
-      { 
-        title: "JAVASCRIPT",
-        hash: "#JAVASCRIPT",
-        icon: javascripticon, 
-        color: "#f5e130" 
+      {
+        title: "SQL",
+        hash: "#SQL",
+        icon: sqlicon,
+        color: "#61DAFB"
       },
-      { 
-        title: "Docker",
-        hash: "#Docker",
-        icon: Dockericon, 
-        color: "#ffffff" 
+      {
+        title: "Power BI",
+        hash: "#PowerBI",
+        icon: powerBiicon,
+        color: "#ffee32"
       },
-      { 
-        title: "Kubernetes",
-        hash: "#Kubernetes",
-        icon: Kubericon, 
-        color: "#000000" 
-      },
-      { 
-        title: "API",
-        hash: "#API",
-        icon: apiicon, 
-        color: "#38b6ff" 
-      },
-      
-      
-      
     ],
   },
 ] as const;
 
 export const skillsDataDesign = [
   {
-    skillsTitle: "Data Analysis",
+    skillsTitle: "IA Générative & LLMs",
     skills: [
-      { 
-        title: "SQL",
-        hash: "#Sql",
-        icon: sqlicon, 
-        color: "#61DAFB" 
-      },
       {
         title: "Python",
         hash: "#Python",
         icon: pythonicon,
-        color: "#e7aa0e",
+        color: "#e7aa0e"
       },
-      { 
-        title: "Power BI", 
-        hash: "#power BI", 
-        icon: powerBiicon, 
-        color: "#ffee32"
-       },
-       { 
-        title: "Excel", 
-        hash: "#Excel", 
-        icon: excelicon, 
-        color: "#2d6a4f"
-       },
-       {
-        title: "Microsoft Fabric", 
-        hash: "#Microsoft Fabric", 
-        icon: FabricIcon, 
-        color: "#6fe9b8"
-       },
-       {
-        title: "R Studio", 
-        hash: "#R Studio", 
-        icon: Ricon, 
-        color: "#a6a6a6"
-       }
+      {
+        title: "LangChain",
+        hash: "#LangChain",
+        icon: iaicon,
+        color: "#1C3C3C"
+      },
+      {
+        title: "OpenAI / Anthropic",
+        hash: "#OpenAI",
+        icon: iaicon,
+        color: "#00A67E"
+      },
+      {
+        title: "Fine-tuning / LoRA",
+        hash: "#FineTuning",
+        icon: mlicon,
+        color: "#eead05"
+      },
     ],
   },
 ] as const;
 
 export const skillsDataCMS = [
   {
-    skillsTitle: "Business Intelligence",
+    skillsTitle: "RAG & Agents IA",
     skills: [
-      
       {
-        title: "Data Warehouse",
-        hash: "#Data Warehouse",
+        title: "Vector DB",
+        hash: "#VectorDB",
         icon: dataWIcon,
         color: "#61DAFB",
       },
       {
-        title: "Data Gouv",
-        hash: "#Data gouv",
-        icon: Dataicon,
+        title: "LangGraph",
+        hash: "#LangGraph",
+        icon: mlicon,
+        color: "#1C3C3C",
+      },
+      {
+        title: "AutoGen / CrewAI",
+        hash: "#AutoGen",
+        icon: iaicon,
         color: "#00700c",
       },
       {
-        title: "Tableau",
-        hash: "#Tableau",
-        icon: TableauIcon,
-        color: "#ffffff",
+        title: "REST / GraphQL",
+        hash: "#API",
+        icon: apiicon,
+        color: "#38b6ff",
       },
-      {
-        title: "Teradata",
-        hash: "#Teradata",
-        icon: Teradataicon,
-        color: "#f6f612",
-      },
-      { 
-        title: "Intelligence Artificielle (IA)",
-        hash: "#Intelligence Artificielle (IA)",
-        icon: iaicon, 
-        color: "#004aad" 
-      },
-      { 
-        title: "Machine Learning (ML)",
-        hash: "#Machine Learning (ML)",
-        icon: mlicon, 
-        color: "#eead05" 
-      },
-      
-      
     ],
   },
 ] as const;
@@ -364,13 +309,12 @@ export const sideBarLeftSocials = [
 
 export const quotesData = [
   {
-    fr: "Ce qui compte, ce n'est pas la quantité d'informations, mais la manière dont on les utilise.",
-    en: "The important thing is not the quantity of information, but how we use it.",
-    
+    fr: "L’IA générative ne remplace pas l’intelligence humaine — elle l’amplifie.",
+    en: "Generative AI doesn’t replace human intelligence — it amplifies it.",
   },
   {
-    fr: '"Les données sont la clé pour libérer le potentiel de votre entreprise"',
-    en: `"Data is the key to unlocking your business’s potential."`,
+    fr: `"Les agents IA sont la prochaine évolution du logiciel d’entreprise."`,
+    en: `"AI agents are the next evolution of enterprise software."`,
   },
 ] as const;
 
@@ -388,13 +332,13 @@ export const aboutMeData = {
     },
     {
       title: "Parcours Professionnel",
-      description:  `Data Analyst Indépendant`,
+      description: `Auto-entrepreneur & Freelance — Ingénieur IA Générative, Agents IA & Data`,
       icon: workicon,
     },
     {
       title: "Contact",
       description:
-        `Data Engineer & BI Developer, Mauna Kea Consulting`,
+        `Disponible pour missions freelance en IA Générative, Agents IA & Data Analyst`,
       icon: contacticon,
     },
     
@@ -408,14 +352,13 @@ export const aboutMeData = {
     },
     {
       title: "Career Paths",
-      description:
-        `Independent Data Analyst`,
+      description: `Freelancer & Entrepreneur — Generative AI, AI Agents & Data Analyst`,
       icon: workicon,
     },
     {
       title: "Contact",
       description:
-        `Data Engineer & BI Developer, Mauna Kea Consulting`,
+        `Available for freelance missions in Generative AI, AI Agents & Data Analyst`,
       icon: contacticon,
     },
   ],
@@ -652,3 +595,15 @@ export const widthStyles: Record<string, { widths: [string, string] }> = {
     widths: ["0%", "0%"],
   },
 };
+
+
+
+
+
+
+
+
+
+
+
+

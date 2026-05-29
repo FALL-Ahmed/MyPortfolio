@@ -40,7 +40,7 @@ const HeaderIntro: React.FC = () => {
           : headerIntroData.description.en}
       </p>
 
-      <div className="button-container z-20 ex flex items-center justify-center mr-8 gap-10 mb-12 max-lg:flex-col max-lg:items-center">
+      <div className="button-container z-20 ex flex items-center justify-center mr-8 gap-10 mb-4 max-lg:flex-col max-lg:items-center">
         {headerIntroData.buttons.map((button, index) => (
           <Button
             key={index}
@@ -53,9 +53,15 @@ const HeaderIntro: React.FC = () => {
               setTimeOfLastClick(Date.now());
             }}
             />
-
         ))}
       </div>
+      <a
+        href="/cv-fall-ahmed.pdf"
+        download="CV-FALL-Ahmed.pdf"
+        className="z-20 text-white drop-shadow-2xl py-4 px-8 rounded-lg text-[1.6rem] flex flex-row gap-4 justify-center items-center cursor-pointer main-btn shadow-xl hover:-translate-y-2 transition-all duration-200 mb-12 max-lg:text-3xl max-lg:py-8 max-lg:px-16"
+      >
+        {language === "FR" ? "Télécharger CV" : "Download CV"}
+      </a>
       <div className="scroll-down-container animate-bounce flex gap-6">
         <BsMouse className="text-[2.6rem]" />
       </div>
