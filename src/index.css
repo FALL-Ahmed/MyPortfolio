@@ -26,12 +26,17 @@
   --white: #ffffff;
   --icewhite: #ebebeb;
   --grey: #5d5d5d;
-  --lightblue: #9daaf2;
-  --darkblue: #1a2238;
-  --blackblue: #0c1220;
-  --orange: #004AAD;
+  --lightblue: #00C853;
+  --darkblue: #111111;
+  --blackblue: #0A0A0A;
+  --orange: #00E676;
+  --border: #2A2A2A;
   --box-shadow-color: inherit;
   --transparent: transparent;
+
+  --f-inter: "Inter", sans-serif;
+  --f-space: "Space Grotesk", sans-serif;
+  --f-mono: "JetBrains Mono", monospace;
 }
 
 /* GENERAL STYLES */
@@ -71,13 +76,15 @@ img {
 h1 {
   font-size: 3.6rem;
   line-height: 120%;
-  font-family: "poppins-black";
+  font-family: var(--f-space);
+  font-weight: 700;
   color: var(--darkblue);
 }
 h2 {
   font-size: 3rem;
   line-height: 120%;
-  font-family: "poppins-bold";
+  font-family: var(--f-space);
+  font-weight: 600;
   margin-top: 2rem; /* Ajoute un espacement vers le bas */
   text-align: center; /* Centre horizontalement */
 }
@@ -87,12 +94,14 @@ button,
 h4 {
   font-size: 2.4rem;
   line-height: 120%;
-  font-family: "poppins-semibold";
+  font-family: var(--f-inter);
+  font-weight: 700;
 }
 
 label {
   font-size: 2rem;
-  font-family: "poppins-semibold";
+  font-family: var(--f-inter);
+  font-weight: 600;
 }
 
 li {
@@ -103,14 +112,15 @@ li {
 p {
   font-size: 2rem;
   line-height: 120%;
-  font-family: "poppins-regular";
+  font-family: var(--f-inter);
+  font-weight: 400;
   color: var(--grey);
 }
 input,
 textarea {
   font-size: 2rem;
   line-height: 120%;
-  font-family: "poppins-regular";
+  font-family: var(--f-inter);
   color: black;
   padding: 2rem;
   width: 100%;
@@ -140,11 +150,12 @@ pre {
 }
 
 nav a span {
-  font-family: monospace;
+  font-family: var(--f-mono);
 }
 
 a {
-  font-family: "poppins-semibold";
+  font-family: var(--f-inter);
+  font-weight: 600;
   transition: all 0.2s ease-in-out;
 }
 
@@ -198,6 +209,7 @@ a {
 
 .main-btn {
   background-color: var(--orange);
+  color: var(--blackblue) !important;
 }
 
 .main-btn:hover {
@@ -508,11 +520,11 @@ a {
 }
 
 .link {
-  color: #007bff; 
-  text-decoration: underline; 
+  color: var(--orange);
+  text-decoration: underline;
   cursor: pointer;
 }
 
 .link:hover {
-  color: #0056b3; 
+  color: var(--lightblue);
 }

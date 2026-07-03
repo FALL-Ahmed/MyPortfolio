@@ -1,19 +1,13 @@
-import bannerBg from "../assets/img/bannerbg.webp";
 import React, { useRef } from "react";
 import Button from "./Button";
 import LiveTicker from "./ParallaxText";
 import { projectsData} from "../assets/lib/data";
-import { Swiper, SwiperSlide } from "swiper/react";
-import { Autoplay, EffectCards, Pagination } from "swiper/modules";
 import { ToastContainer} from "react-toastify";
 import { Tooltip as ReactTooltip } from "react-tooltip";
 import { useSectionInView } from "../assets/lib/hooks";
 import { useLanguage } from "../context/language-context";
 import { motion, useScroll, useTransform } from "framer-motion";
 import "react-toastify/dist/ReactToastify.css";
-import "swiper/css";
-import "swiper/css/effect-cards";
-import "swiper/css/pagination";
 
 const ProjectSlider: React.FC = () => {
   const { ref } = useSectionInView("Projects");
@@ -49,10 +43,8 @@ const ProjectSlider: React.FC = () => {
         <div
           className="quote-outer-container bg-[--darkblue] -rotate-3 flex justify-center items-center scale-110 pt-32 pb-32 max-lg:pt-16 max-lg:pb-16 max-lg:-ml-44 max-lg:-mr-44 max-lg:scale-100 "
           style={{
-            backgroundImage: `url(${bannerBg})`,
-            backgroundPosition: "center",
-            backgroundSize: "cover",
-            backgroundRepeat: "no-repeat",
+            backgroundImage:
+              "radial-gradient(ellipse at top right, rgba(0,230,118,0.15) 0%, transparent 60%), linear-gradient(135deg, #111111 0%, #0A0A0A 100%)",
           }}
         >
           <div className="title-container flex flex-col gap-6 mb-24 rotate-3 justify-between items-center max-lg:w-[100vw]">
@@ -73,86 +65,68 @@ const ProjectSlider: React.FC = () => {
                 {language === "FR" ? "Mes projets" : "My Projects"}
               </h2>
             </motion.div>
-            <Swiper
-              effect={"cards"}
-              grabCursor={true}
-              modules={[EffectCards, Autoplay, Pagination]}
-              className=" w-[60vw] max-lg:hidden min-[1921px]:px-96"
-              loop={true}
-              autoplay={{
-                delay: 4000,
-                disableOnInteraction: true,
-                pauseOnMouseEnter: true,
-              }}
-              pagination={{
-                clickable: true,
-              }}
-            >
+            <div className="grid grid-cols-2 min-[1400px]:grid-cols-3 gap-10 w-[80vw] max-lg:hidden min-[1921px]:px-96">
               {projectsData.map((project, index: number) => (
-                <SwiperSlide
+                <article
                   key={index}
-                  className="quote-outer-container bg-[--darkblue] text-[--white] flex flex-row justify-between  rounded-2xl p-20 text-left max-lg:hidden "
+                  className="group relative rounded-2xl overflow-hidden cursor-pointer aspect-[4/3] shadow-2xl"
                 >
-                  <div className=" w-[55%] flex flex-col gap-12 justify-between ">
-                    <h2>{project.title}</h2>
-
-                    <p className="text-white">
-                      {language === "FR"
-                        ? project.description
-                        : project.description_EN}
-                    </p>
-                    <div className="technologies">
-                      <h3>
-                        {language === "FR" ? "Technologies" : "Technologies"}
-                      </h3>
-                      <div className="grid grid-cols-6 gap-10 p-4">
-                        {project.technologies.map(
-                          (technology, innerIndex: number) => (
-                            <img
-                              key={innerIndex}
-                              src={technology.icon}
-                              alt={`${project.title}-icon`}
-                              className="h-[5rem] w-[60%] "
-                              data-tooltip-id="my-tooltip"
-                              data-tooltip-content={technology.name}
-                            />
-                          )
-                        )}
+                  <img
+                    src={project.image}
+                    alt={`${project.title}-project-mockup`}
+                    className="absolute inset-0 w-full h-full object-cover transition-transform duration-300 group-hover:scale-105"
+                  />
+                  <div className="absolute inset-0 flex flex-col justify-end p-10 transition-opacity duration-300 group-hover:opacity-0">
+                    <h2 className="text-white bg-[--darkblue] inline-block w-fit px-6 py-3 rounded-xl">{project.title}</h2>
+                  </div>
+                  <div className="absolute inset-0 bg-[--darkblue] flex flex-col justify-between p-8 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                    <div className="flex flex-col gap-3">
+                      <h3 className="text-white text-2xl">{project.title}</h3>
+                      <p className="text-white text-lg leading-snug line-clamp-5">
+                        {language === "FR"
+                          ? project.description
+                          : project.description_EN}
+                      </p>
+                      <div className="technologies">
+                        <div className="flex gap-6">
+                          {project.technologies.map(
+                            (technology, innerIndex: number) => (
+                              <img
+                                key={innerIndex}
+                                src={technology.icon}
+                                alt={`${project.title}-icon`}
+                                className="h-[3rem]"
+                                data-tooltip-id="my-tooltip"
+                                data-tooltip-content={technology.name}
+                              />
+                            )
+                          )}
+                        </div>
                       </div>
                     </div>
-                    <div className="buttons flex gap-10 max-lg:flex-col">
-                    {project.title === "Mammamia gelato" ? (
-          <Button
-            label="(Confidentiel)"
-            onClick={() => alert("Le lien de la démo est confidentiel et ne peut pas être partagé.")}
-            iconSVG={project.deploymenticon}
-            buttoncolor={project.colors.main}
-            iconcolor={project.colors.icon}
-          />
-        ) : (
-          <Button
-            label="Live Demo"
-            link={project.deploymenturl}
-            iconSVG={project.deploymenticon}
-            buttoncolor={project.colors.main}
-            iconcolor={project.colors.icon}
-          />
-        )}
-
-                  
-                </div>
+                    <div className="buttons flex gap-10 shrink-0">
+                      {project.title === "Mammamia gelato" ? (
+                        <Button
+                          label="(Confidentiel)"
+                          onClick={() => alert("Le lien de la démo est confidentiel et ne peut pas être partagé.")}
+                          iconSVG={project.deploymenticon}
+                          buttoncolor={project.colors.main}
+                          iconcolor={project.colors.icon}
+                        />
+                      ) : (
+                        <Button
+                          label="Live Demo"
+                          link={project.deploymenturl}
+                          iconSVG={project.deploymenticon}
+                          buttoncolor={project.colors.main}
+                          iconcolor={project.colors.icon}
+                        />
+                      )}
+                    </div>
                   </div>
-
-                  <div className="right-content relative h-[38rem] overflow-hidden rounded-xl w-[60%] transition-all duration-200 shadow-2xl">
-                    <img
-                      src={project.image}
-                      alt={`${project.title}-project-mockup`}
-                      className={`w-full h-auto`}
-                    />
-                  </div>
-                </SwiperSlide>
+                </article>
               ))}
-            </Swiper>
+            </div>
             {projectsData.map((project, index: number) => (
               <article
                 key={index}

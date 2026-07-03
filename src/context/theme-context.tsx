@@ -18,7 +18,7 @@ const THEME_STORAGE_KEY = "theme";
 export default function ThemeContextProvider({
   children,
 }: ThemeContextProviderProps) {
-  const [theme, setTheme] = useState<Theme>("light");
+  const [theme, setTheme] = useState<Theme>("dark");
 
   const toggleTheme = () => {
     const newTheme = theme === "light" ? "dark" : "light";
@@ -32,12 +32,7 @@ export default function ThemeContextProvider({
     const localTheme = window.localStorage.getItem(
       THEME_STORAGE_KEY
     ) as Theme | null;
-    const preferredColorScheme = window.matchMedia(
-      "(prefers-color-scheme: dark)"
-    ).matches
-      ? "dark"
-      : "light";
-    const initialTheme = localTheme || preferredColorScheme;
+    const initialTheme = localTheme || "dark";
 
     setTheme(initialTheme);
     document.documentElement.classList.add(initialTheme);

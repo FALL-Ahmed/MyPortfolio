@@ -92,6 +92,9 @@ const AboutMe: React.FC = () => {
                   </div>
                   <div>
                     <h2>{paragraph.title}</h2>
+                    {"period" in paragraph && paragraph.period && (
+                      <p className="text-[--lightblue] text-2xl">{paragraph.period}</p>
+                    )}
                   </div>
                 </div>
                 <div className="flex flex-row gap-10 max-lg:flex-col">
@@ -120,8 +123,8 @@ const AboutMe: React.FC = () => {
       École nationale supérieure des industries du textile et de l'habillement (Casablanca-Morocco)
     </a>
   </>
-) : paragraph.title === "Contact" || paragraph.title === "Contact" ?
- ( // Remplacer le second "Contact" par "Contact" en anglais
+) : paragraph.title === "Contact" ?
+ (
 
  <div>
     <p style={{ color: 'white' }}>Email : <a href="mailto:Fallahmed100@email.com" className="link">Fallahmed100@email.com</a></p>
@@ -130,13 +133,7 @@ const AboutMe: React.FC = () => {
 </div>
 
 ) : (
-  <>
-    {paragraph.description}
-    <br />
-    <a href="https://www.linkedin.com/search/results/all/?fetchDeterministicClustersOnly=true&heroEntityKey=urn%3Ali%3Aorganization%3A70390145&keywords=ibtikar%20technologies&origin=RICH_QUERY_TYPEAHEAD_HISTORY&position=0&searchId=13f9ce0e-4cf2-4c04-832d-99253fee94f4&sid=ml)&spellCorrectionEnabled=true" target="_blank" className="link">
-      Ibtikar Technology
-    </a>
-  </>
+  <>{paragraph.description}</>
 )}
 
                     </p>

@@ -1,6 +1,5 @@
 import React from "react";
 
-import bannerBg from "../assets/img/bannerbg2.svg";
 import { quotesData } from "../assets/lib/data";
 import { useLanguage } from "../context/language-context";
 import { useQuoteAnimation } from "../hooks/useQuoteAnimation";
@@ -29,10 +28,8 @@ const BannerQuote: React.FC<BannerProps> = ({
         <div
           className="quote-outer-container bg-[--darkblue] h-[50vh] -rotate-3 flex justify-center items-center scale-110 max-lg:h-full min-[1921px]:px-96"
           style={{
-            backgroundImage: `url(${bannerBg})`,
-            backgroundPosition: "center",
-            backgroundSize: "cover",
-            backgroundRepeat: "no-repeat",
+            backgroundImage:
+              "radial-gradient(ellipse at top right, rgba(0,230,118,0.15) 0%, transparent 60%), linear-gradient(135deg, #111111 0%, #0A0A0A 100%)",
           }}
         >
           <div className="quote-container rotate-3 flex items-center flex-col justify-center p-56 max-lg:p-20 ">

@@ -1,34 +1,30 @@
 import excelicon from "../../assets/icons/excelicon.svg";
 import powerBiicon from "../../assets/icons/powerBiicon.svg";
-import FabricIcon from "../../assets/icons/fqbrics.png"
 import sqlicon from "../../assets/icons/sqlicon.svg";
-import Dataicon from "../../assets/icons/Data-Governance.png";
+import Dataicon from "../../assets/icons/reporting-reglementaire.svg";
+import controlesIcon from "../../assets/icons/controles-coherence.svg";
+import diffusionIcon from "../../assets/icons/diffusion-automatisee.svg";
+import openaiicon from "../../assets/icons/openai-badge.svg";
+import claudeicon from "../../assets/icons/claude.svg";
+import llmicon from "../../assets/icons/llm.svg";
 import pythonicon from "../../assets/icons/pythonicon.svg";
 import maurimap from "../../assets/img/Maurimap.png";
-import Teradataicon from "../../assets/icons/Teradata.png";
 import dataWIcon from "../../assets/icons/dataW.svg";
-import TableauIcon from "../../assets/icons/Tableau.png";
-import Ricon from "../../assets/icons/R.png";
+import dataMartIcon from "../../assets/icons/dataMart.svg";
+import DAXicon from "../../assets/icons/DAX.svg";
 import medibien from "../../assets/img/medibien.png";
 import mammamia2 from "../../assets/img/slide2.webp";
 import zephyr from "../../assets/img/zephyr.png"
 import inpc from "../../assets/img/inpc.png"
+import anwarbank from "../../assets/img/anwarbank.png"
 import profilepicture from "../img/me21.png";
 import contacticon from "../../assets/icons/contact.svg";
 import workicon from "../../assets/icons/work.svg";
 import hardwareicon from "../../assets/icons/hardware-icon.svg";
 import { GoHome, GoPerson, GoMail, GoStack, GoProject } from "react-icons/go";
 import { FiGithub, FiLinkedin, FiMail, FiLink } from "react-icons/fi";
-import Imprint from "../../components/Imprint";
-import Privacy from "../../components/Privacy";
-import awsicon from "../../assets/icons/awsicon.svg";
-import SAPicon from "../../assets/icons/SAP.png";
 import javascripticon from "../../assets/icons/javascripticon.svg";
-import iaicon from "../../assets/icons/AI.svg";
 import mlicon from "../../assets/icons/ML.svg";
-import Dockericon from "../../assets/icons/Docker.png";
-import Kubericon from "../../assets/icons/Kubernetes.png";
-import apiicon from "../../assets/img/API.png";
 
 export const headerIntroData = {
   title: {
@@ -36,12 +32,12 @@ export const headerIntroData = {
     en: "Hi, I'm Ahmed",
   },
   subtitle: {
-    fr: "Ingénieur Data Analyst & Business Intelligence",
-    en: "Data Analyst & Business Intelligence Engineer",
+    fr: "Ingénieur Data & Business Intelligence",
+    en: "Data & Business Intelligence Engineer",
   },
   description: {
-    fr: "Je suis FALL Ahmed, un passionné d'analyse qui voit le potentiel caché derrière chaque donnée. j’aide les entreprises à visualiser et comprendre leurs données avec des tableaux de bord sur mesure, quel que soit le secteur d'activité. À mes yeux, chaque information est une clé qui peut ouvrir la porte à de nouvelles opportunités. Laissez-vous inspirer par  mes réalisations et faisons de vos chiffres une force stratégique!",
-    en: "I am FALL Ahmed, a passionate analyst who sees the hidden potential behind every piece of data. I help companies visualize and understand their data with tailor-made dashboards, whatever the sector of activity. In my eyes, every piece of information is a key that can unlock new opportunities. Let yourself be inspired by my achievements, and let's turn your numbers into a strategic asset!",
+    fr: "Ingénieur Business Intelligence & reporting décisionnel, je conçois des tableaux de bord Power BI et des reportings fiables pour la banque, la logistique et l'éducation. Faisons de vos données une force stratégique !",
+    en: "Business Intelligence & decision-making reporting engineer, I design Power BI dashboards and reliable reporting for banking, logistics and education. Let's turn your data into a strategic asset!",
   },
   buttons: [
     {
@@ -69,11 +65,32 @@ export const headerIntroData = {
 
 export const projectsData = [
   {
+    title: "Anwar Bank - Risque & Conformité",
+    description:
+      "Solution de BI bancaire : scoring et profil de risque de 500 clients (solvabilité, liquidité, score de crédit), suivi de 5 000+ transactions internationales (125,7M€) avec contrôles de cohérence, et détection de transactions suspectes pour la conformité AML.",
+    description_EN:
+      "Banking BI solution: risk scoring for 500 clients (solvency, liquidity, credit score), monitoring of 5,000+ international transactions (€125.7M) with consistency checks, and suspicious-transaction detection for AML compliance.",
+      technologies: [
+        { name: "Power BI", icon: powerBiicon },
+        { name: "SQL", icon: sqlicon },
+    ],
+    image: anwarbank,
+    deploymenturl: "https://app.powerbi.com/view?r=eyJrIjoiZmFiM2UxNzctMTI0YS00ZTM4LWI4MDYtZjdiNDM2YmIwNmEwIiwidCI6ImZmOGM2MDkwLTU2ZmEtNDk3Ni05NzUxLTlhNTQwYzAxYzExMCJ9",
+
+    deploymenticon: FiLink,
+    colors: {
+      main: "main-btn",
+      second: "secondary-btn",
+      icon: "white",
+      projectcolor: "#FF5E2C",
+    },
+  },
+  {
     title: "Analyse INPC - Mauritanie",
     description:
-      "Ce projet consiste en une analyse approfondie de l'indice national des prix à la consommation (INPC) en Mauritanie, en se concentrant sur les variations mensuelles et annuelles selon les fonctions et nomenclatures secondaires. L'objectif est de fournir une vision claire de l’évolution des prix dans des secteurs spécifiques tels que l'alimentation, le logement, et d'autres biens essentiels. ",
+      "Reporting réglementaire complet sur l'indice national des prix à la consommation (INPC) en Mauritanie : fiabilisation des données sources, suivi automatisé des variations mensuelles et annuelles par fonctions et nomenclatures secondaires, et restitution sous Power BI pour faciliter la lecture des décideurs et le respect des exigences de publication officielle.",
     description_EN:
-      "This project involves an in-depth analysis of the National Consumer Price Index (INPC) in Mauritania, focusing on monthly and annual variations according to functions and secondary classifications. The goal is to provide a clear view of price evolution in specific sectors such as food, housing, and other essential goods. ",
+      "Full regulatory reporting on Mauritania's National Consumer Price Index (INPC): source data reliability checks, automated tracking of monthly and annual variations by function and secondary classification, and Power BI restitution to support decision-makers and meet official publication requirements.",
       technologies: [
         { name: "Power BI", icon: powerBiicon },
         { name: "Excel", icon: excelicon },
@@ -190,90 +207,69 @@ export const liveTickerData = {
 
 export const skillsDataWeb = [
   {
-    skillsTitle: "Compétences Supplémentaires",
+    skillsTitle: "IA & Développement",
     skills: [
-      { 
-        title: "AWS",
-        hash: "#AWS",
-        icon: awsicon, 
-        color: "#f48c06" 
+      {
+        title: "OpenAI",
+        hash: "#OpenAI",
+        icon: openaiicon,
+        color: "#10A37F",
       },
-      { 
-        title: "SAP CLOUD",
-        hash: "#SAP CLOUD",
-        icon: SAPicon, 
-        color: "#00b4d8" 
+      {
+        title: "Claude (Anthropic)",
+        hash: "#Claude Anthropic",
+        icon: claudeicon,
+        color: "#d97757",
       },
-      { 
-        title: "JAVASCRIPT",
-        hash: "#JAVASCRIPT",
-        icon: javascripticon, 
-        color: "#f5e130" 
+      {
+        title: "LLM",
+        hash: "#LLM",
+        icon: llmicon,
+        color: "#7C3AED",
       },
-      { 
-        title: "Docker",
-        hash: "#Docker",
-        icon: Dockericon, 
-        color: "#ffffff" 
+      {
+        title: "Machine Learning (ML)",
+        hash: "#Machine Learning (ML)",
+        icon: mlicon,
+        color: "#eead05",
       },
-      { 
-        title: "Kubernetes",
-        hash: "#Kubernetes",
-        icon: Kubericon, 
-        color: "#000000" 
+      {
+        title: "Développement Web (React, Node.js, TypeScript)",
+        hash: "#Developpement Web",
+        icon: javascripticon,
+        color: "#f5e130",
       },
-      { 
-        title: "API",
-        hash: "#API",
-        icon: apiicon, 
-        color: "#38b6ff" 
-      },
-      
-      
-      
     ],
   },
 ] as const;
 
 export const skillsDataDesign = [
   {
-    skillsTitle: "Data Analysis",
+    skillsTitle: "Business Intelligence",
     skills: [
-      { 
-        title: "SQL",
-        hash: "#Sql",
-        icon: sqlicon, 
-        color: "#61DAFB" 
-      },
       {
-        title: "Python",
-        hash: "#Python",
-        icon: pythonicon,
-        color: "#e7aa0e",
-      },
-      { 
-        title: "Power BI", 
-        hash: "#power BI", 
-        icon: powerBiicon, 
+        title: "Power BI",
+        hash: "#power BI",
+        icon: powerBiicon,
         color: "#ffee32"
        },
-       { 
-        title: "Excel", 
-        hash: "#Excel", 
-        icon: excelicon, 
+      {
+        title: "DAX",
+        hash: "#DAX",
+        icon: DAXicon,
+        color: "#F2C811"
+       },
+       {
+        title: "Excel avancé & Power Query",
+        hash: "#Excel Power Query",
+        icon: excelicon,
         color: "#2d6a4f"
        },
        {
-        title: "Microsoft Fabric", 
-        hash: "#Microsoft Fabric", 
-        icon: FabricIcon, 
-        color: "#6fe9b8"
-       },
-       {
-        title: "R Studio", 
-        hash: "#R Studio", 
-        icon: Ricon, 
-        color: "#a6a6a6"
+        title: "Modélisation de données",
+        hash: "#Modelisation de donnees",
+        icon: dataMartIcon,
+        color: "#e7150e"
        }
     ],
   },
@@ -281,47 +277,44 @@ export const skillsDataDesign = [
 
 export const skillsDataCMS = [
   {
-    skillsTitle: "Business Intelligence",
+    skillsTitle: "Data Engineering & Reporting",
     skills: [
-      
       {
-        title: "Data Warehouse",
-        hash: "#Data Warehouse",
-        icon: dataWIcon,
-        color: "#61DAFB",
+        title: "SQL Avancé (MySQL, PostgreSQL, MongoDB, SQL Server)",
+        hash: "#SQL Avance",
+        icon: sqlicon,
+        color: "#00E676",
       },
       {
-        title: "Data Gouv",
-        hash: "#Data gouv",
+        title: "Python & Pandas",
+        hash: "#Python Pandas",
+        icon: pythonicon,
+        color: "#e7aa0e",
+      },
+      {
+        title: "ETL & Data Warehousing",
+        hash: "#ETL Data Warehousing",
+        icon: dataWIcon,
+        color: "#00E676",
+      },
+      {
+        title: "Reporting Réglementaire & Opérationnel",
+        hash: "#Reporting Reglementaire Operationnel",
         icon: Dataicon,
         color: "#00700c",
       },
       {
-        title: "Tableau",
-        hash: "#Tableau",
-        icon: TableauIcon,
-        color: "#ffffff",
+        title: "Contrôles de Cohérence & Fiabilisation",
+        hash: "#Controles de Coherence",
+        icon: controlesIcon,
+        color: "#00C853",
       },
       {
-        title: "Teradata",
-        hash: "#Teradata",
-        icon: Teradataicon,
-        color: "#f6f612",
+        title: "Diffusion Automatisée de Rapports",
+        hash: "#Diffusion Automatisee",
+        icon: diffusionIcon,
+        color: "#e7863c",
       },
-      { 
-        title: "Intelligence Artificielle (IA)",
-        hash: "#Intelligence Artificielle (IA)",
-        icon: iaicon, 
-        color: "#004aad" 
-      },
-      { 
-        title: "Machine Learning (ML)",
-        hash: "#Machine Learning (ML)",
-        icon: mlicon, 
-        color: "#eead05" 
-      },
-      
-      
     ],
   },
 ] as const;
@@ -334,10 +327,10 @@ export const navLinks = [
   { fr: "Contact", en: "Contact", hash: "#contact", icon: GoMail },
 ] as const;
 
-export const FooterLinks = [
-  { fr: "Impression", en: "Imprint", hash: "#imprint", data: <Imprint /> },
-  { fr: "Confidentialité", en: "Privacy", hash: "#privacy", data: <Privacy /> },
-] as const;
+export const footerCopyright = {
+  fr: "Tous droits réservés.",
+  en: "All rights reserved.",
+} as const;
 
 export const sideBarRightMail = {
   link: "mailto:fallahmed100@gmail.com",
@@ -388,34 +381,48 @@ export const aboutMeData = {
     },
     {
       title: "Parcours Professionnel",
-      description:  `Data Analyst Indépendant`,
+      period: "Depuis janvier 2025",
+      description:  `Consultant Data & Business Intelligence (Freelance) — secteurs bancaire, logistique, éducation et restauration.`,
+      icon: workicon,
+    },
+    {
+      title: "Entrepreneuriat",
+      period: "Depuis mai 2025",
+      description: `Fondateur & CEO de Tchoop, CoFondateur de Madrastak.`,
       icon: workicon,
     },
     {
       title: "Contact",
       description:
-        `Data Engineer & BI Developer, Mauna Kea Consulting`,
+        `Consultant Data & Business Intelligence (Freelance)`,
       icon: contacticon,
     },
-    
+
   ],
   paragraphs_EN: [
     {
       title: "Academic background",
       description:
-        `Engineering Degree in Computer Science and Systems Management`,    
+        `Engineering Degree in Computer Science and Systems Management`,
       icon: hardwareicon,
     },
     {
       title: "Career Paths",
+      period: "Since January 2025",
       description:
-        `Independent Data Analyst`,
+        `Data & Business Intelligence Consultant (Freelance) — banking, logistics, education and food service sectors.`,
+      icon: workicon,
+    },
+    {
+      title: "Entrepreneurship",
+      period: "Since May 2025",
+      description: `Founder & CEO of Tchoop, Co-founder of Madrastak.`,
       icon: workicon,
     },
     {
       title: "Contact",
       description:
-        `Data Engineer & BI Developer, Mauna Kea Consulting`,
+        `Data & Business Intelligence Consultant (Freelance)`,
       icon: contacticon,
     },
   ],
