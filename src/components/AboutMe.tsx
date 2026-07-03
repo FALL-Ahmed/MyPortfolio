@@ -126,13 +126,16 @@ const AboutMe: React.FC = () => {
  <div>
     <p style={{ color: 'white' }}>Email : <a href="mailto:Fallahmed100@email.com" className="link">Fallahmed100@email.com</a></p>
     <p style={{ color: 'white' }}>WhatsApp : <a href="https://wa.me/22241513211" className="link">+222 41 51 32 11</a></p>
-    <p style={{ color: 'white' }}>WhatsApp : <a href="https://wa.me/2120700360608" className="link">+212 07 00 36 06 08</a></p>
     <p style={{ color: 'white' }}>Téléphone : <a href="tel:+22241070318" className="link">+222 41 07 03 18</a></p>
 </div>
 
 ) : (
   <>
     {paragraph.description}
+    <br />
+    <a href="https://www.linkedin.com/search/results/all/?fetchDeterministicClustersOnly=true&heroEntityKey=urn%3Ali%3Aorganization%3A70390145&keywords=ibtikar%20technologies&origin=RICH_QUERY_TYPEAHEAD_HISTORY&position=0&searchId=13f9ce0e-4cf2-4c04-832d-99253fee94f4&sid=ml)&spellCorrectionEnabled=true" target="_blank" className="link">
+      Ibtikar Technology
+    </a>
   </>
 )}
 

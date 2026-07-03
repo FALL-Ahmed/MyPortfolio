@@ -79,7 +79,6 @@ const ProjectSlider: React.FC = () => {
               modules={[EffectCards, Autoplay, Pagination]}
               className=" w-[60vw] max-lg:hidden min-[1921px]:px-96"
               loop={true}
-              initialSlide={0}
               autoplay={{
                 delay: 4000,
                 disableOnInteraction: true,
@@ -106,39 +105,49 @@ const ProjectSlider: React.FC = () => {
                       <h3>
                         {language === "FR" ? "Technologies" : "Technologies"}
                       </h3>
-                      <div className="flex flex-wrap gap-6 p-4">
+                      <div className="grid grid-cols-6 gap-10 p-4">
                         {project.technologies.map(
                           (technology, innerIndex: number) => (
-                            <span
+                            <img
                               key={innerIndex}
-                              className="px-6 py-2 rounded-full border border-orange-400 text-white text-2xl"
-                            >
-                              {technology.name}
-                            </span>
+                              src={technology.icon}
+                              alt={`${project.title}-icon`}
+                              className="h-[5rem] w-[60%] "
+                              data-tooltip-id="my-tooltip"
+                              data-tooltip-content={technology.name}
+                            />
                           )
                         )}
                       </div>
                     </div>
                     <div className="buttons flex gap-10 max-lg:flex-col">
-                    {project.deploymenturl ? (
+                    {project.title === "Mammamia gelato" ? (
           <Button
-            label={project.deploymenturl.includes("github") ? "GitHub" : "Live Demo"}
+            label="(Confidentiel)"
+            onClick={() => alert("Le lien de la démo est confidentiel et ne peut pas être partagé.")}
+            iconSVG={project.deploymenticon}
+            buttoncolor={project.colors.main}
+            iconcolor={project.colors.icon}
+          />
+        ) : (
+          <Button
+            label="Live Demo"
             link={project.deploymenturl}
             iconSVG={project.deploymenticon}
             buttoncolor={project.colors.main}
             iconcolor={project.colors.icon}
           />
-        ) : null}
+        )}
 
                   
                 </div>
                   </div>
 
-                  <div className="right-content relative h-[38rem] rounded-xl w-[60%] transition-all duration-200 shadow-2xl flex items-center justify-center overflow-hidden bg-[--darkblue]">
+                  <div className="right-content relative h-[38rem] overflow-hidden rounded-xl w-[60%] transition-all duration-200 shadow-2xl">
                     <img
                       src={project.image}
                       alt={`${project.title}-project-mockup`}
-                      className="h-full w-full object-contain"
+                      className={`w-full h-auto`}
                     />
                   </div>
                 </SwiperSlide>
@@ -153,18 +162,27 @@ const ProjectSlider: React.FC = () => {
                 <img
                   src={project.image}
                   alt={project.image}
-                  className="h-[35vh] w-full object-contain rounded-3xl bg-[--darkblue]"
+                  className="h-[35vh] w-full object-cover object-top rounded-3xl"
                 />
                 <div className="buttons flex gap-10 max-lg:flex-col">
-                {project.deploymenturl ? (
+                {project.title === "Mammamia gelato" ? (
           <Button
-            label={project.deploymenturl.includes("github") ? "GitHub" : "Live Demo"}
+            label="(Confidentiel)"
+            onClick={() => alert("Le lien de la démo est confidentiel et ne peut pas être partagé.")}
+            iconSVG={project.deploymenticon}
+            buttoncolor={project.colors.main}
+            iconcolor={project.colors.icon}
+          />
+        ) : (
+          <Button
+            label="Live Demo"
             link={project.deploymenturl}
             iconSVG={project.deploymenticon}
             buttoncolor={project.colors.main}
             iconcolor={project.colors.icon}
           />
-        ) : null}
+        )}
+                 
                 </div>
                 <p className="text-white  max-lg:text-4xl">
                   {language === "FR"
@@ -176,15 +194,18 @@ const ProjectSlider: React.FC = () => {
                   <h3 className="text-white">
                     {language === "FR" ? "Technologien" : "Technologies"}
                   </h3>
-                  <div className="flex flex-wrap gap-6 p-4">
+                  <div className="grid grid-cols-3 gap-10 p-4">
                     {project.technologies.map(
                       (technology, innerIndex: number) => (
-                        <span
+                        <img
                           key={innerIndex}
-                          className="px-6 py-2 rounded-full border border-orange-400 text-white text-2xl"
-                        >
-                          {technology.name}
-                        </span>
+                          src={technology.icon}
+                          alt={`${project.title}-icon`}
+                          className="h-[5rem] w-[60%] "
+                          data-tooltip-id="my-tooltip"
+                          data-tooltip-content={technology.name}
+                          loading="lazy"
+                        />
                       )
                     )}
                   </div>
